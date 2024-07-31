@@ -12,7 +12,6 @@ import { Button } from "./ui/button";
 import Link from "next/link";
 
 type CompetitionItems = {
-  title_competition: string;
   title: string;
   description: string;
   description_2: string;
@@ -28,7 +27,6 @@ export const CompetitionModal: React.FC<CompetitionItems> = ({
   description_2,
   description_3,
   information_description,
-  title_competition,
   slug,
   link,
 }) => (
