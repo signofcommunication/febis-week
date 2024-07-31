@@ -26,36 +26,14 @@ type Program = {
   title: string;
   description: string;
   description_2: string;
-  link: string;
 };
 
 export const Modal: React.FC<Program> = ({
   title,
   description,
   description_2,
-  link,
 }) => {
   return (
-    // <AlertDialog>
-    //   <AlertDialogTrigger asChild>
-    //     <Button variant="outline">
-    //       More Info <ArrowUpRight className="ml-1" size="16" />
-    //     </Button>
-    //   </AlertDialogTrigger>
-    //   <AlertDialogContent className="w-[600px]">
-    //     <AlertDialogHeader>
-    //       <AlertDialogTitle>{title}</AlertDialogTitle>
-    //       <div className="flex">
-    //         <div className="w-1/2">
-    //           <h6>{description}</h6>
-    //         </div>
-    //         <div className="w-1/2">
-    //           <h6>{description_2}</h6>
-    //         </div>
-    //       </div>
-    //     </AlertDialogHeader>
-    //   </AlertDialogContent>
-    // </AlertDialog>
     <Dialog>
       <DialogTrigger>
         <Button variant="outline">
