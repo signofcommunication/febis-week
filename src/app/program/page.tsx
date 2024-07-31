@@ -1,11 +1,6 @@
 import { Container, Main, Section } from "../../../components/craft";
-
-// Third-party library imports
-
 import { ArrowUpRight } from "lucide-react";
-
-// UI component imports
-
+import { Modal } from "@/components/modal";
 import {
   Accordion,
   AccordionContent,
@@ -14,37 +9,25 @@ import {
 } from "../../../components/ui/accordion";
 
 type FAQItem = {
-  question: string;
-  answer: string;
-  link?: string;
+  title: string;
+  description: string;
+  description_2: string;
+  link: string;
 };
 
 const content: FAQItem[] = [
   {
-    question: "Seminar",
-    answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    title: "Seminar",
+    description: `Era digital dan globalisasi telah membuka peluang baru bagi generasi muda untuk berkontribusi dalam pembangunan bangsa. Ekonomi kreatif, dengan segala potensinya, menjadi sektor yang menjanjikan bagi para pemuda untuk mengembangkan ide-ide kreatif dan inovatif mereka. `,
+    description_2: `Universitas Matana akan menyelenggarakan seminar dengan tema “Empowering Tomorrow's Leaders: Fostering Youth in the Creative Economy for Sustainable Growth yang akan dibawakan langsung oleh pembicara dari Kementerian Pariwisata dan Ekonomi Kreatif (Kemenparekraf) yang diharapkan dapat meningkatkan dan membekali generasi muda dengan keterampilan dan pengetahuan yang diperlukan untuk sukses dalam ekonomi kreatif. Seminar ini akan berlangsung di Universitas Matana dan turut mengundang siswa siswi SMA sederajat dari beberapa sekolah sebagai peserta seminar.`,
     link: "https://google.com",
   },
   {
-    question: "Workshop",
-    answer:
-      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-  },
-  {
-    question: "ACCOUNTING COMPETITION",
-    answer:
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-  },
-  {
-    question: "PRODUCT DESIGN COMPETITION",
-    answer:
-      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-  },
-  {
-    question: "ESSAY & DEBATE COMPETITION",
-    answer:
-      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    title: "Workshop",
+    description:
+      "Industri kopi dan teh di Indonesia memiliki potensi besar dalam lingkup ekonomi kreatif. Hal ini dibuktikan dengan semakin maraknya kedai kopi dan teh di berbagai daerah, serta meningkatnya minat masyarakat terhadap minuman ini. Selain itu, kopi dan teh juga merupakan komoditas penting bagi perekonomian Indonesia, dengan Indonesia sebagai salah satu negara penghasil kopi dan teh terbesar di dunia. Maka dari itu, Universitas Matana memiliki keinginan untuk menyelenggarakan workshop bertemakan “Coffee & Tea Making”.",
+    description_2: `Kedua workshop tersebut akan dibawakan oleh coffee & tea enthusiast yang profesional dalam bidang tersebut. Acara workshop ini akan menampilkan demonstrasi pembuatan kopi & teh, seperti pembuatan latte art, serta pengenalan dengan berbagai macam teh. Beberapa peserta dapat berkesempatan untuk mencobanya secara langsung. Melalui workshop ini, diharapkan dapat menambah skill serta pengetahuan siswa/i dan mahasiswa/i untuk dapat membuka peluang usaha baru untuk pengembangan industri ekonomi kreatif di Indonesia. `,
+    link: "google.com",
   },
 ];
 
@@ -53,30 +36,26 @@ export default function Program() {
     <Main className="p-24">
       <Section>
         <Container>
-          <h3 className="!mt-0">Frequently Asked Questions</h3>
-          <h4 className="text-muted-foreground">
-            Can&apos;t find the answer you&apos;re looking for? Reach out to our
-            customer support team.
-          </h4>
           <div className="not-prose mt-4 flex flex-col gap-4 md:mt-8">
             {content.map((item, index) => (
               <Accordion key={index} type="single" collapsible>
                 <AccordionItem
-                  value={item.question}
+                  value={"s"}
                   className="rounded-md border bg-muted/20 px-4 transition-all hover:bg-muted/50"
                 >
                   <AccordionTrigger className="text-left hover:no-underline">
-                    {item.question}
+                    {item.title}
                   </AccordionTrigger>
                   <AccordionContent className="text-base md:w-3/4">
-                    {item.answer}
                     {item.link && (
-                      <a
-                        href={item.link}
-                        className="mt-2 flex w-full items-center opacity-60 transition-all hover:opacity-100"
-                      >
-                        More Info <ArrowUpRight className="ml-1" size="16" />
-                      </a>
+                      <span className="mt-2 flex w-full items-center opacity-60 transition-all hover:opacity-100">
+                        <Modal
+                          title={item.title}
+                          description={item.description}
+                          description_2={item.description_2}
+                          link={item.link}
+                        />
+                      </span>
                     )}
                   </AccordionContent>
                 </AccordionItem>
