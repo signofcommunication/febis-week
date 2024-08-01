@@ -44,17 +44,31 @@ export default function Footer() {
           </div>
           <div className="flex flex-col gap-2 justify-end">
             {/* <h5>Program Studi</h5> */}
-            <Link href="/">Manajemen</Link>
-            <Link href="/">Hospitaliti dan Pariwisata</Link>
-            <Link href="/">Akuntansi</Link>
-            <Link href="/">Teknik Informatika</Link>
+            <Link href="https://manajemen.matanauniversity.ac.id/">
+              Manajemen
+            </Link>
+            <Link href="https://hospar.matanauniversity.ac.id/">
+              Hospitaliti dan Pariwisata
+            </Link>
+            <Link href="https://akuntansi.matanauniversity.ac.id/">
+              Akuntansi
+            </Link>
+            <Link href="https://teknikinformatika.matanauniversity.ac.id/">
+              Teknik Informatika
+            </Link>
           </div>
           <div className="flex flex-col gap-2 justify-end">
-            <Link href="/">Statistika</Link>
-            <Link href="/">Fisika Medis</Link>
-            <Link href="/">DKV</Link>
-            <Link href="/">Arsitektur</Link>
-            <Link href="/">K3</Link>
+            <Link href="https://statistika.matanauniversity.ac.id/">
+              Statistika
+            </Link>
+            <Link href="https://fisikamedis.matanauniversity.ac.id/">
+              Fisika Medis
+            </Link>
+            <Link href="https://dkv.matanauniversity.ac.id/">DKV</Link>
+            <Link href="https://arsitektur.matanauniversity.ac.id/">
+              Arsitektur
+            </Link>
+            <Link href="https://matanauniversity.ac.id/">K3</Link>
           </div>
         </Container>
         <Container className="not-prose flex flex-col justify-between gap-6 border-t md:flex-row md:items-center md:gap-2">
