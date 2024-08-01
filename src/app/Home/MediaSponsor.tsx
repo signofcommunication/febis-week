@@ -50,14 +50,14 @@ const MediaSponsor = () => {
 
           <hr />
 
-          <div className="mt-6 grid grid-cols-5 items-center">
+          <div className="mt-6 grid grid-cols-5 justify-between	 items-center">
             {featureText.map(({ image }, index) => (
               <Image
                 src={image}
-                width={"150"}
-                height={"150"}
+                width={"125"}
+                height={"125"}
                 alt="Picture of the author"
-                className="m-auto flex-1"
+                className="mx-2"
                 key={index}
               />
             ))}

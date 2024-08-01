@@ -7,9 +7,9 @@ import { Button } from "../../../components/ui/button";
 
 const Hero = () => {
   return (
-    <Section className="w-screen">
-      <Container className="flex flex-col text-center text-8xl">
-        <h1 className="!mb-0">Febis Week 2024</h1>
+    <Section className="w-screen h-screen" id="febis-week-banner">
+      <Container>
+        <div></div>
       </Container>
     </Section>
   );
