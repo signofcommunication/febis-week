@@ -22,7 +22,9 @@ export const CardWithForm: React.FC<CardContent> = ({ title, link }) => {
         <CardTitle>{title}</CardTitle>
       </CardHeader>
       <CardContent>
-        <a href={link}>Click More Info</a>
+        <a href={link} target="_blank">
+          Click More Info
+        </a>
       </CardContent>
     </Card>
   );

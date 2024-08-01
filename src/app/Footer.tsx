@@ -90,8 +90,9 @@ export default function Footer() {
             </Link>
           </div>
           <p className="text-muted-foreground">
-            © <a href="https://github.com/brijr/components">brijr/components</a>
-            . All rights reserved. 2024-present.
+            ©{" "}
+            <a href="https://github.com/brijr/components">Matana University</a>.
+            All rights reserved. 2024-present.
           </p>
         </Container>
       </Section>
