@@ -4,7 +4,7 @@ import { Container, Main, Section } from "../../../components/craft";
 type CardContent = {
   title: string;
   link: string;
-  color?: string;
+  imageUrl?: string;
 };
 
 const contents: CardContent[] = [
@@ -19,17 +19,17 @@ const contents: CardContent[] = [
   {
     title: "Accounting Competition",
     link: "https://docs.google.com/forms/d/e/1FAIpQLSeseCRc_QTo41tXnO03qYeXvWvkmiNpI9d0nO_KUKpJdUyWBA/viewform",
-    color: " blue",
+    imageUrl: "cover-accounting.jpg",
   },
   {
     title: "Product Design Competition",
     link: "https://docs.google.com/forms/d/e/1FAIpQLSeseCRc_QTo41tXnO03qYeXvWvkmiNpI9d0nO_KUKpJdUyWBA/viewform",
-    color: " orange",
+    imageUrl: "cover-debat.jpg",
   },
   {
     title: "Essay & Debate Competition",
     link: "https://docs.google.com/forms/d/e/1FAIpQLSeseCRc_QTo41tXnO03qYeXvWvkmiNpI9d0nO_KUKpJdUyWBA/viewform",
-    color: " purple",
+    imageUrl: "cover-product-design.jpg",
   },
 ];
 
@@ -37,13 +37,13 @@ export default function Registration() {
   return (
     <Main className="p-24">
       <Section>
-        <Container>
+        <Container className="flex flex-wrap justify-center">
           {contents.map((content, index) => (
             <CardWithForm
               key={index}
               title={content.title}
               link={content.link}
-              color={content.color}
+              imageUrl={content?.imageUrl}
             />
           ))}
         </Container>
