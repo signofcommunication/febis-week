@@ -15,7 +15,7 @@ import { Facebook, Instagram, Phone } from "lucide-react";
 import { Section, Container } from "@/components/craft";
 
 // Asset imports
-import Logo from "@/public/logo-matana.png";
+import Logo from "@/public/Logo-Matana_Vertikal-dan-Horizontal-02-1-800x291-1.png";
 
 export default function Footer() {
   return (
@@ -28,11 +28,14 @@ export default function Footer() {
               <Image
                 src={Logo}
                 alt="Logo"
-                width={120}
+                width={200}
                 height={27.27}
                 className="transition-all hover:opacity-75 dark:invert"
               ></Image>
             </Link>
+            <Balancer className="font-bold text-2xl">
+              Matana University Tower
+            </Balancer>
             <p>
               <Balancer>
                 <Link href="https://goo.gl/maps/CgDyA6nBBWuLCi687">

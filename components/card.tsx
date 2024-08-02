@@ -1,6 +1,5 @@
 import * as React from "react";
 
-import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
@@ -13,17 +12,21 @@ import {
 type CardContent = {
   title: string;
   link: string;
+  color?: string;
 };
 
-export const CardWithForm: React.FC<CardContent> = ({ title, link }) => {
+export const CardWithForm: React.FC<CardContent> = ({ title, link, color }) => {
   return (
-    <Card className="w-full text-center my-2">
+    <Card
+      className="w-full text-center my-2"
+      style={{ backgroundColor: color ? color : "inherit" }}
+    >
       <CardHeader>
         <CardTitle>{title}</CardTitle>
       </CardHeader>
       <CardContent>
         <a href={link} target="_blank">
-          Click More Info
+          Daftar Sekarang
         </a>
       </CardContent>
     </Card>

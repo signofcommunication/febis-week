@@ -4,6 +4,7 @@ import { Container, Main, Section } from "../../../components/craft";
 type CardContent = {
   title: string;
   link: string;
+  color?: string;
 };
 
 const contents: CardContent[] = [
@@ -16,16 +17,19 @@ const contents: CardContent[] = [
     link: "https://docs.google.com/forms/d/e/1FAIpQLSdsFyMHOuaKGUWlhoUf9zSm7JI1J3dxGOWKJUY48xp7i2Yx1g/viewform?usp=sharing",
   },
   {
-    title: "Accounting",
+    title: "Accounting Competition",
     link: "https://docs.google.com/forms/d/e/1FAIpQLSeseCRc_QTo41tXnO03qYeXvWvkmiNpI9d0nO_KUKpJdUyWBA/viewform",
+    color: " blue",
   },
   {
-    title: "Product Design",
+    title: "Product Design Competition",
     link: "https://docs.google.com/forms/d/e/1FAIpQLSeseCRc_QTo41tXnO03qYeXvWvkmiNpI9d0nO_KUKpJdUyWBA/viewform",
+    color: " orange",
   },
   {
-    title: "Essay & Debate",
+    title: "Essay & Debate Competition",
     link: "https://docs.google.com/forms/d/e/1FAIpQLSeseCRc_QTo41tXnO03qYeXvWvkmiNpI9d0nO_KUKpJdUyWBA/viewform",
+    color: " purple",
   },
 ];
 
@@ -39,6 +43,7 @@ export default function Registration() {
               key={index}
               title={content.title}
               link={content.link}
+              color={content.color}
             />
           ))}
         </Container>

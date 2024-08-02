@@ -1,15 +1,6 @@
-// React and Next.js imports
-import Link from "next/link";
 import Image from "next/image";
-
-// Third-party library imports
 import Balancer from "react-wrap-balancer";
-
-// UI component imports
 import { Section, Container } from "../../../components/craft";
-
-// Icon imports
-import { Coins, ArrowRight } from "lucide-react";
 
 type FeatureText = {
   image: string;

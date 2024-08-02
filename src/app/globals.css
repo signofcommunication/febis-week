@@ -69,6 +69,13 @@
   }
 }
 
+body {
+  background: url("../../public/bg-body.jpg");
+  background-size: cover; /* or contain, or 100% 100% */
+  background-repeat: no-repeat;
+  /*background-position: center center; */
+}
+
 #febis-week-banner {
   background: url("../../public/web\ banner.jpg");
   background-size: contain; /* or contain, or 100% 100% */
