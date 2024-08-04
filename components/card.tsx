@@ -13,7 +13,7 @@ import {
 type CardContent = {
   title: string;
   link: string;
-  imageUrl?: string;
+  imageUrl: string;
 };
 
 export const CardWithForm: React.FC<CardContent> = ({
@@ -21,20 +21,8 @@ export const CardWithForm: React.FC<CardContent> = ({
   link,
   imageUrl,
 }) => {
+  console.log({ title, link, imageUrl });
   return (
-    // <Card
-    //   classNameName="w-full text-center my-2"
-    //   style={{ backgroundColor: color ? color : "inherit" }}
-    // >
-    //   <CardHeader>
-    //     <CardTitle>{title}</CardTitle>
-    //   </CardHeader>
-    //   <CardContent>
-    //     <a href={link} target="_blank">
-    //       Daftar Sekarang
-    //     </a>
-    //   </CardContent>
-    // </Card>
     <div className="relative grid h-[40rem] w-full max-w-[28rem] flex items-end justify-center overflow-hidden rounded-xl bg-white bg-clip-border text-center text-gray-700 m-3">
       <div
         className={`absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-[url('../../public/cover-debat.jpg')] bg-cover bg-clip-border bg-center text-gray-700 shadow-none`}
@@ -52,3 +40,17 @@ export const CardWithForm: React.FC<CardContent> = ({
     </div>
   );
 };
+
+// <Card
+//   classNameName="w-full text-center my-2"
+//   style={{ backgroundColor: color ? color : "inherit" }}
+// >
+//   <CardHeader>
+//     <CardTitle>{title}</CardTitle>
+//   </CardHeader>
+//   <CardContent>
+//     <a href={link} target="_blank">
+//       Daftar Sekarang
+//     </a>
+//   </CardContent>
+// </Card>

@@ -35,7 +35,7 @@ const Sponsor = () => {
 
           <hr />
 
-          <div className="mt-6 flex items-center">
+          <div className="mt-6 flex flex-col md:flex-row gap-4 items-center">
             {featureText.map(({ image }, index) => (
               <Image
                 src={image}

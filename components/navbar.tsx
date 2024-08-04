@@ -44,16 +44,16 @@ export function NavBar() {
                 </Link>
               </DialogClose>
               <DialogClose asChild>
-                <Link href="/software">
+                <Link href="/about">
                   <Button variant="outline" className="w-full">
-                    Software
+                    About
                   </Button>
                 </Link>
               </DialogClose>
               <DialogClose asChild>
-                <Link href="/automation">
+                <Link href="/program">
                   <Button variant="outline" className="w-full">
-                    Automation
+                    Program
                   </Button>
                 </Link>
               </DialogClose>
@@ -65,9 +65,9 @@ export function NavBar() {
                 </Link>
               </DialogClose>
               <DialogClose asChild>
-                <Link href="/projects">
+                <Link href="/Registration">
                   <Button variant="outline" className="w-full">
-                    Projects
+                    Registration
                   </Button>
                 </Link>
               </DialogClose>

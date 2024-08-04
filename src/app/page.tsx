@@ -2,7 +2,6 @@ import Hero from "./Home/Hero";
 import About from "./Home/About";
 import Sponsor from "./Home/Sponsor";
 import MediaSponsor from "./Home/MediaSponsor";
-import Footer from "./Footer";
 
 export default function Home() {
   return (
@@ -11,7 +10,6 @@ export default function Home() {
       <About />
       <Sponsor />
       <MediaSponsor />
-      <Footer />
     </main>
   );
 }
