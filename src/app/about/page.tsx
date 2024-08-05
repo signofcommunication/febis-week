@@ -5,12 +5,12 @@ export default function About() {
     <Section
       className="
     relative backdrop-blur-sm
-    indent-4 md:indent-0 p-24"
+    indent-4 md:indent-0"
     >
       <Container
         className="
       flex flex-col gap-8
-      indent-4 md:indent-0 p-24"
+      indent-4 md:indent-0 mt-24"
       >
         <h5
           className="

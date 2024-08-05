@@ -80,59 +80,58 @@ const competitionContents: CompetitionItems[] = [
 
 export default function Program() {
   return (
-    <Main className="p-24">
-      <Section>
-        <Container>
-          <div className="not-prose mt-4 flex flex-col gap-4 md:mt-8">
-            {content.map((item, index) => (
-              <Accordion key={index} type="single" collapsible>
-                <AccordionItem
-                  value={"s"}
-                  className="rounded-md border bg-muted/20 px-4 transition-all hover:bg-muted/50"
-                >
-                  <AccordionTrigger className="text-left hover:no-underline">
-                    {item.title}
-                  </AccordionTrigger>
-                  <AccordionContent className="text-base md:w-3/4">
-                    <span className="mt-2 flex w-full justify-center items-center opacity-60 transition-all hover:opacity-100">
-                      <Modal
-                        title={item.title}
-                        description={item.description}
-                        description_2={item.description_2}
-                      />
-                    </span>
-                  </AccordionContent>
-                </AccordionItem>
-              </Accordion>
-            ))}
-            {competitionContents.map((item, index) => (
-              <Accordion key={index} type="single" collapsible>
-                <AccordionItem
-                  value={"s"}
-                  className="rounded-md border bg-muted/20 px-4 transition-all hover:bg-muted/50"
-                >
-                  <AccordionTrigger className="text-left hover:no-underline">
-                    {item.title_competition}
-                  </AccordionTrigger>
-                  <AccordionContent className="text-base md:w-3/4">
-                    <span className="mt-2 flex w-full justify-center items-center opacity-60 transition-all hover:opacity-100">
-                      <CompetitionModal
-                        title={item.title}
-                        description={item.description}
-                        description_2={item.description_2}
-                        description_3={item.description_3}
-                        information_description={item.information_description}
-                        slug={item.slug}
-                        link={item.link}
-                      />
-                    </span>
-                  </AccordionContent>
-                </AccordionItem>
-              </Accordion>
-            ))}
-          </div>
-        </Container>
-      </Section>
-    </Main>
+    <Section>
+      <Container className="mt-24">
+        <div className="not-prose mt-4 flex flex-col gap-4 md:flex-wrap">
+          {content.map((item, index) => (
+            <Accordion key={index} type="single" collapsible>
+              <AccordionItem
+                value={"s"}
+                className="rounded-md border bg-muted/20 px-4 transition-all hover:bg-muted/50"
+              >
+                <AccordionTrigger className="text-left hover:no-underline">
+                  {item.title}
+                </AccordionTrigger>
+                <AccordionContent className="text-base md:w-full">
+                  <span className="mt-2 flex sm:flex-col w-full justify-center items-center opacity-60 transition-all hover:opacity-100">
+                    {/* Use a custom modal component (Modal.js or CompetitionModal.js) */}
+                    <Modal
+                      title={item.title}
+                      description={item.description}
+                      description_2={item.description_2}
+                    />
+                  </span>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
+          ))}
+          {competitionContents.map((item, index) => (
+            <Accordion key={index} type="single" collapsible>
+              <AccordionItem
+                value={"s"}
+                className="rounded-md border bg-muted/20 px-4 transition-all hover:bg-muted/50"
+              >
+                <AccordionTrigger className="text-left hover:no-underline">
+                  {item.title_competition}
+                </AccordionTrigger>
+                <AccordionContent className="text-base md:w-full">
+                  <span className="mt-2 flex sm:flex-col w-full justify-center items-center opacity-60 transition-all hover:opacity-100">
+                    <CompetitionModal
+                      title={item.title}
+                      description={item.description}
+                      description_2={item.description_2}
+                      description_3={item.description_3}
+                      information_description={item.information_description}
+                      slug={item.slug}
+                      link={item.link}
+                    />
+                  </span>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
+          ))}
+        </div>
+      </Container>
+    </Section>
   );
 }

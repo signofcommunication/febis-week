@@ -31,8 +31,7 @@ export function NavBar() {
             <SheetHeader>
               <SheetTitle>Febis Week</SheetTitle>
               <SheetDescription>
-                Scale and launch products with expert developers, on-demand, at
-                a flat monthly fee
+                Febis Week 2024 Universitas Matana
               </SheetDescription>
             </SheetHeader>
             <div className="flex flex-col space-y-3 mt-[1rem] z-[99]">
@@ -65,7 +64,7 @@ export function NavBar() {
                 </Link>
               </DialogClose>
               <DialogClose asChild>
-                <Link href="/Registration">
+                <Link href="/registration">
                   <Button variant="outline" className="w-full">
                     Registration
                   </Button>

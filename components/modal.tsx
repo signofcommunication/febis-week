@@ -40,11 +40,11 @@ export const Modal: React.FC<Program> = ({
           More Info <ArrowUpRight className="ml-1" size="16" />
         </Button>
       </DialogTrigger>
-      <DialogContent className="w-full">
+      <DialogContent className="w-screen sm:w-full">
         <DialogTitle className="text-center">{title}</DialogTitle>
-        <div className="flex">
-          <div className="w-1/2">{description}</div>
-          <div className="w-1/2">{description_2}</div>
+        <div className="flex flex-col sm:flex-row">
+          <div className="w-full sm:w-1/2">{description}</div>
+          <div className="w-full sm:w-1/2">{description_2}</div>
         </div>
       </DialogContent>
     </Dialog>
