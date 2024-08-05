@@ -17,25 +17,22 @@ type FeatureText = {
 
 const featureText: FeatureText[] = [
   {
+    image: "/tribunnews.png",
+  },
+  {
     image: "/kompas.png",
+  },
+  {
+    image: "/tangrada.png",
   },
   {
     image: "/mediaindonesia.png",
   },
   {
-    image: "/sindonews.png",
-  },
-  {
     image: "/korantempo.png",
   },
   {
-    image: "/tribunnews.png",
-  },
-  {
-    image: "/tribunnews.png",
-  },
-  {
-    image: "/tribunnews.png",
+    image: "/sindonews.png",
   },
 ];
 

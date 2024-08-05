@@ -1,14 +1,5 @@
 import * as React from "react";
-import Image from "next/image";
-
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { CardContent } from "@/components/ui/card";
 
 type CardContent = {
   title: string;
@@ -21,7 +12,6 @@ export const CardWithForm: React.FC<CardContent> = ({
   link,
   imageUrl,
 }) => {
-  console.log({ title, link, imageUrl });
   return (
     <div className="relative grid h-[40rem] w-full max-w-[28rem] flex items-end justify-center overflow-hidden rounded-xl bg-white bg-clip-border text-center text-gray-700 m-3">
       <div
@@ -40,17 +30,3 @@ export const CardWithForm: React.FC<CardContent> = ({
     </div>
   );
 };
-
-// <Card
-//   classNameName="w-full text-center my-2"
-//   style={{ backgroundColor: color ? color : "inherit" }}
-// >
-//   <CardHeader>
-//     <CardTitle>{title}</CardTitle>
-//   </CardHeader>
-//   <CardContent>
-//     <a href={link} target="_blank">
-//       Daftar Sekarang
-//     </a>
-//   </CardContent>
-// </Card>
