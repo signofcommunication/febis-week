@@ -1,10 +1,8 @@
 import {
   Dialog,
   DialogContent,
-  DialogHeader,
   DialogTitle,
   DialogDescription,
-  DialogFooter,
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { ArrowUpRight } from "lucide-react";

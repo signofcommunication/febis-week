@@ -1,15 +1,13 @@
 "use client";
 import React, { useState } from "react";
+import { CircleArrowLeft, CircleArrowRight } from "lucide-react";
 
 type FeatureText = {
   imageLink: string;
 };
 
 export default function FeaturedImageGallery() {
-  const [active, setActive] = useState(
-    "https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-  );
-
+  const [activeIndex, setActiveIndex] = useState(0);
   const data: FeatureText[] = [
     {
       imageLink: "../AXL05209.jpg",
@@ -31,23 +29,48 @@ export default function FeaturedImageGallery() {
     },
   ];
 
+  const handleNext = () => {
+    setActiveIndex(prevIndex => (prevIndex + 1) % data.length);
+  };
+
+  const handlePrev = () => {
+    setActiveIndex(
+      prevIndex =>
+        (prevIndex === 0 ? data.length - 1 : prevIndex - 1) % data.length
+    );
+  };
+
   return (
     <div className="grid gap-4">
-      <div>
+      <div className="relative">
         <img
           className="h-auto w-full max-w-full rounded-lg object-cover object-center md:h-[480px]"
-          src={active}
-          alt="Featured Image" // Added alt text for accessibility
+          src={data[activeIndex].imageLink} // Access image based on activeIndex
+          alt="Featured Image"
         />
+        <button
+          type="button"
+          className="absolute top-1/2 -translate-y-1/2 right-4 bg-gray-500 hover:bg-gray-700 text-white rounded-full p-2 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white"
+          onClick={handleNext}
+        >
+          <CircleArrowRight />
+        </button>
+        <button
+          type="button"
+          className="absolute top-1/2 -translate-y-1/2 left-4 bg-gray-500 hover:bg-gray-700 text-white rounded-full p-2 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white"
+          onClick={handlePrev}
+        >
+          <CircleArrowLeft />
+        </button>
       </div>
       <div className="grid grid-cols-5 gap-4">
         {data.map(({ imageLink }, index) => (
           <div key={index}>
             <img
-              onClick={() => setActive(imageLink)}
               src={imageLink}
               className="h-20 max-w-full cursor-pointer rounded-lg object-cover object-center"
-              alt={`Gallery image ${index + 1}`} // Added descriptive alt text
+              alt={`Gallery image ${index + 1}`}
+              onClick={() => setActiveIndex(index)} // Set active index directly
             />
           </div>
         ))}
