@@ -1,6 +1,8 @@
-import { Container, Main, Section } from "@/components/craft";
+import { Container, Section } from "@/components/craft";
+import { Undo2 } from "lucide-react";
 import Balancer from "react-wrap-balancer";
 import FeaturedImageGallery from "@/components/gallery";
+import Link from "next/link";
 
 type FeatureDescription = {
   text: string;
@@ -58,6 +60,11 @@ export default function Page() {
   return (
     <Section>
       <Container className="mt-24">
+        <div className="mb-10">
+          <Link href="/blog">
+            <Undo2 />
+          </Link>
+        </div>
         <Balancer>
           Fakultas Ekonomi, Bisnis, dan Ilmu Sosial (FEBIS) Universitas Matana
           menggelar acara tahunan FEBIS WEEK dengan tema `Sustainable and
