@@ -29,11 +29,11 @@ export const Modal: React.FC<Program> = ({
       </DialogTrigger>
       <DialogContent className="w-screen sm:w-full">
         <DialogTitle className="text-center">{title}</DialogTitle>
-        <div className="flex flex-col sm:flex-row">
-          <DialogDescription className="w-full sm:w-1/2">
+        <div className="flex flex-col  gap-4">
+          <DialogDescription className="flex-1">
             {description}
           </DialogDescription>
-          <DialogDescription className="w-full sm:w-1/2">
+          <DialogDescription className="flex-1">
             {description_2}
           </DialogDescription>
         </div>
