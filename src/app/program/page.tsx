@@ -18,6 +18,7 @@ type ProgramItems = {
   title: string;
   description: string;
   description_2: string;
+  background: string;
 };
 
 type CompetitionItems = {
@@ -29,6 +30,7 @@ type CompetitionItems = {
   information_description: string;
   slug: string;
   link: string;
+  background: string;
 };
 
 const content: ProgramItems[] = [
@@ -36,12 +38,14 @@ const content: ProgramItems[] = [
     title: "Seminar",
     description: `Era digital dan globalisasi telah membuka peluang baru bagi generasi muda untuk berkontribusi dalam pembangunan bangsa. Ekonomi kreatif, dengan segala potensinya, menjadi sektor yang menjanjikan bagi para pemuda untuk mengembangkan ide-ide kreatif dan inovatif mereka. `,
     description_2: `Universitas Matana akan menyelenggarakan seminar dengan tema “Empowering Tomorrow's Leaders: Fostering Youth in the Creative Economy for Sustainable Growth yang akan dibawakan langsung oleh pembicara dari Kementerian Pariwisata dan Ekonomi Kreatif (Kemenparekraf) yang diharapkan dapat meningkatkan dan membekali generasi muda dengan keterampilan dan pengetahuan yang diperlukan untuk sukses dalam ekonomi kreatif. Seminar ini akan berlangsung di Universitas Matana dan turut mengundang siswa siswi SMA sederajat dari beberapa sekolah sebagai peserta seminar.`,
+    background: "bg-gradient-to-r from-lime-300 to-cyan-400",
   },
   {
     title: "Workshop",
     description:
       "Industri kopi dan teh di Indonesia memiliki potensi besar dalam lingkup ekonomi kreatif. Hal ini dibuktikan dengan semakin maraknya kedai kopi dan teh di berbagai daerah, serta meningkatnya minat masyarakat terhadap minuman ini. Selain itu, kopi dan teh juga merupakan komoditas penting bagi perekonomian Indonesia, dengan Indonesia sebagai salah satu negara penghasil kopi dan teh terbesar di dunia. Maka dari itu, Universitas Matana memiliki keinginan untuk menyelenggarakan workshop bertemakan “Coffee & Tea Making”.",
     description_2: `Kedua workshop tersebut akan dibawakan oleh coffee & tea enthusiast yang profesional dalam bidang tersebut. Acara workshop ini akan menampilkan demonstrasi pembuatan kopi & teh, seperti pembuatan latte art, serta pengenalan dengan berbagai macam teh. Beberapa peserta dapat berkesempatan untuk mencobanya secara langsung. Melalui workshop ini, diharapkan dapat menambah skill serta pengetahuan siswa/i dan mahasiswa/i untuk dapat membuka peluang usaha baru untuk pengembangan industri ekonomi kreatif di Indonesia. `,
+    background: "bg-gradient-to-r from-lime-600 to-amber-500",
   },
 ];
 
@@ -57,6 +61,8 @@ const competitionContents: CompetitionItems[] = [
       "Peserta pada kompetisi ini ditargetkan kepada para siswa/i SMA/SMK/sederajat dan Peserta yang didaftarkan merupakan siswa/i aktif sekolah yang bersangkutan.",
     slug: "Kompetisi ini akan diselenggarakan dalam bentuk Tim. Setiap sekolah tidak memiliki batasan tim untuk diikutsertakan didalam lomba, dengan syarat setiap tim terdiri dari 3 orang siswa/i.",
     link: "https://bit.ly/3Y4RxjY",
+    background:
+      "bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%",
   },
   {
     title_competition: "Product Design Competition",
@@ -71,6 +77,7 @@ const competitionContents: CompetitionItems[] = [
       "Peserta pada kompetisi ini ditargetkan kepada para siswa/i SMA/SMK/sederajat dan Peserta yang didaftarkan merupakan siswa/i aktif sekolah yang bersangkutan.",
     slug: "Kompetisi ini akan diselenggarakan dalam bentuk Tim. Setiap sekolah tidak memiliki batasan tim untuk diikutsertakan didalam lomba, dengan syarat setiap tim terdiri dari 3 orang siswa/i.",
     link: "https://bit.ly/3Y35fnm",
+    background: "bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500",
   },
   {
     title_competition: "Essay & Debate Competition",
@@ -81,6 +88,7 @@ const competitionContents: CompetitionItems[] = [
       "Peserta pada kompetisi ini ditargetkan kepada para siswa/i SMA/SMK/sederajat dan Peserta yang didaftarkan merupakan siswa/i aktif sekolah yang bersangkutan.",
     slug: "Kompetisi ini akan diselenggarakan dalam bentuk Tim. Setiap sekolah tidak memiliki batasan tim untuk diikutsertakan didalam lomba, dengan syarat setiap tim terdiri dari 3 orang siswa/i.",
     link: "https://bit.ly/3WnhFFi",
+    background: "bg-gradient-to-r from-pink-500 to-orange-500",
   },
 ];
 
@@ -93,9 +101,9 @@ export default function Program() {
             <Accordion key={index} type="single" collapsible>
               <AccordionItem
                 value={"s"}
-                className="rounded-md border bg-muted/20 px-4 transition-all hover:bg-muted/50"
+                className={`rounded-md border bg-muted/20 px-4 transition-all hover:bg-muted/50 text-white ${item.background}`}
               >
-                <AccordionTrigger className="text-left hover:no-underline">
+                <AccordionTrigger className="text-left hover:no-underline text-xl">
                   {item.title}
                 </AccordionTrigger>
                 <AccordionContent className="text-base md:w-full">
@@ -114,9 +122,11 @@ export default function Program() {
             <Accordion key={index} type="single" collapsible>
               <AccordionItem
                 value={"s"}
-                className="rounded-md border bg-muted/20 px-4 transition-all hover:bg-muted/50"
+                className={`rounded-md border text-white bg-muted/20 px-4 transition-all hover:bg-muted/50 ${item.background}`}
               >
-                <AccordionTrigger className="text-left hover:no-underline">
+                <AccordionTrigger
+                  className={`text-left text-xl hover:no-underline`}
+                >
                   {item.title_competition}
                 </AccordionTrigger>
                 <AccordionContent className="text-base md:w-full">

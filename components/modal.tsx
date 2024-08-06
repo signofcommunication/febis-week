@@ -23,7 +23,7 @@ export const Modal: React.FC<Program> = ({
   return (
     <Dialog>
       <DialogTrigger>
-        <Button variant="outline">
+        <Button variant="outline" className="text-black">
           More Info <ArrowUpRight className="ml-1" size="16" />
         </Button>
       </DialogTrigger>

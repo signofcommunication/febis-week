@@ -30,7 +30,7 @@ export const CompetitionModal: React.FC<CompetitionItems> = ({
 }) => (
   <Dialog>
     <DialogTrigger>
-      <Button className="text-center" variant="outline">
+      <Button className="text-center text-black" variant="outline">
         More Info <ArrowUpRight className="ml-1" size="16" />
       </Button>
     </DialogTrigger>
