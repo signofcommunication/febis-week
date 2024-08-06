@@ -1,4 +1,4 @@
-import { Container, Main, Section } from "../../../components/craft";
+import { Container, Section } from "../../../components/craft";
 import { Modal } from "@/components/modal";
 import { CompetitionModal } from "@/components/competetition_modal";
 import {
@@ -94,7 +94,6 @@ export default function Program() {
                 </AccordionTrigger>
                 <AccordionContent className="text-base md:w-full">
                   <span className="mt-2 flex sm:flex-col w-full justify-center items-center opacity-60 transition-all hover:opacity-100">
-                    {/* Use a custom modal component (Modal.js or CompetitionModal.js) */}
                     <Modal
                       title={item.title}
                       description={item.description}

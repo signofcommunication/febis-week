@@ -1,25 +1,12 @@
-import {
-  AlertDialog,
-  AlertDialogAction,
-  AlertDialogCancel,
-  AlertDialogContent,
-  AlertDialogDescription,
-  AlertDialogFooter,
-  AlertDialogHeader,
-  AlertDialogTitle,
-  AlertDialogTrigger,
-} from "@/components/ui/alert-dialog";
 import { Button } from "@/components/ui/button";
 import { ArrowUpRight } from "lucide-react";
 
 import {
   Dialog,
   DialogContent,
-  DialogHeader,
   DialogTitle,
-  DialogDescription,
-  DialogFooter,
   DialogTrigger,
+  DialogDescription,
 } from "@/components/ui/dialog";
 
 type Program = {
@@ -43,8 +30,12 @@ export const Modal: React.FC<Program> = ({
       <DialogContent className="w-screen sm:w-full">
         <DialogTitle className="text-center">{title}</DialogTitle>
         <div className="flex flex-col sm:flex-row">
-          <div className="w-full sm:w-1/2">{description}</div>
-          <div className="w-full sm:w-1/2">{description_2}</div>
+          <DialogDescription className="w-full sm:w-1/2">
+            {description}
+          </DialogDescription>
+          <DialogDescription className="w-full sm:w-1/2">
+            {description_2}
+          </DialogDescription>
         </div>
       </DialogContent>
     </Dialog>

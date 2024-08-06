@@ -36,20 +36,24 @@ export const CompetitionModal: React.FC<CompetitionItems> = ({
     </DialogTrigger>
     <DialogContent>
       <DialogTitle className="text-center">{title}</DialogTitle>
-      <DialogDescription>{description}</DialogDescription>
-      <DialogDescription>{description_2}</DialogDescription>
-      {description_3 && <DialogDescription>{description_3}</DialogDescription>}
-      <p className="text-center font-bold">Information</p>
-      <DialogDescription className="text-center text-xs max-w-96 m-auto">
-        {information_description}
-      </DialogDescription>
-      <DialogDescription className="text-center text-xs max-w-96 m-auto">
-        {slug}
-      </DialogDescription>
+      <div className="flex flex-col sm:flex-col">
+        <DialogDescription>{description}</DialogDescription>
+        <DialogDescription>{description_2}</DialogDescription>
+        {description_3 && (
+          <DialogDescription>{description_3}</DialogDescription>
+        )}
+        <p className="text-center font-bold">Information</p>
+        <DialogDescription className="text-center text-xs max-w-96 m-auto">
+          {information_description}
+        </DialogDescription>
+        <DialogDescription className="text-center text-xs max-w-96 m-auto">
+          {slug}
+        </DialogDescription>
 
-      <Link href={link} className="flex justify-center align-center">
-        Booklet <ArrowUpRight className="ml-1" size="16" />
-      </Link>
+        <Link href={link} className="flex justify-center align-center">
+          Booklet <ArrowUpRight className="ml-1" size="16" />
+        </Link>
+      </div>
     </DialogContent>
   </Dialog>
 );
