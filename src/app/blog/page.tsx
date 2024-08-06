@@ -25,7 +25,7 @@ export default function Blog() {
               />
             </div>
             <div className="flex flex-col gap-6 py-8">
-              <h1 className="uppercase">
+              <h1 className="uppercase font-bold text-lg">
                 <Balancer>Febis Week 2023</Balancer>
               </h1>
               <p className="font-light leading-[1.4] opacity-70">
@@ -58,7 +58,7 @@ export default function Blog() {
               />
             </div>
             <div className="flex flex-col gap-6 py-8 content-container">
-              <h1 className="uppercase">Febis Insight</h1>
+              <h1 className="uppercase  font-bold text-lg">Febis Insight</h1>
               <p className="font-light leading-[1.4] opacity-70 text-content">
                 Dapatkan update seputar kegiatan dan aktivitas FEBIS di sini.
               </p>
