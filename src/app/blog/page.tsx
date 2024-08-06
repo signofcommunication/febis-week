@@ -15,9 +15,6 @@ export default function Blog() {
         >
           <Craft.Container className="grid items-stretch md:grid-cols-2 md:gap-12">
             <div className="flex justify-center flex-col gap-6 py-8">
-              {/* <h1 className="uppercase">
-                <Balancer>Febis Week 2023</Balancer>
-              </h1> */}
               <Image
                 src="/febis-week-2023-thumbnail.jpg"
                 alt="Github"
@@ -28,6 +25,9 @@ export default function Blog() {
               />
             </div>
             <div className="flex flex-col gap-6 py-8">
+              <h1 className="uppercase">
+                <Balancer>Febis Week 2023</Balancer>
+              </h1>
               <p className="font-light leading-[1.4] opacity-70">
                 Fakultas Ekonomi, Bisnis, dan Ilmu Sosial (FEBIS) Universitas
                 Matana menggelar acara tahunan FEBIS WEEK dengan tema
@@ -47,7 +47,6 @@ export default function Blog() {
         <Craft.Section className="rounded-md border bg-muted/50 p-4">
           <Craft.Container className="grid items-stretch md:grid-cols-2 md:gap-12 grid-flow-row-dense">
             <div className="flex items-center justify-center flex-col gap-6 py-8 heading-container md:order-2">
-              {/* <h1 className="uppercase">Febis Insight</h1> */}
               <Image
                 src="/febis-insight.jpg"
                 alt="Github"
@@ -59,6 +58,7 @@ export default function Blog() {
               />
             </div>
             <div className="flex flex-col gap-6 py-8 content-container">
+              <h1 className="uppercase">Febis Insight</h1>
               <p className="font-light leading-[1.4] opacity-70 text-content">
                 Dapatkan update seputar kegiatan dan aktivitas FEBIS di sini.
               </p>
