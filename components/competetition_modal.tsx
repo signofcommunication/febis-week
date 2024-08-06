@@ -39,11 +39,9 @@ export const CompetitionModal: React.FC<CompetitionItems> = ({
       <DialogDescription>{description}</DialogDescription>
       <DialogDescription>{description_2}</DialogDescription>
       {description_3 && <DialogDescription>{description_3}</DialogDescription>}
-      <p className="text-center font-bold">Information</p>
-      <DialogDescription className="text-xs max-w-96 m-auto">
+      <p className="text-center font-bold underline">Information</p>
+      <DialogDescription className="text-center">
         {information_description}
-      </DialogDescription>
-      <DialogDescription className="text-xs max-w-96 m-auto">
         {slug}
       </DialogDescription>
 
