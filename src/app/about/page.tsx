@@ -1,4 +1,5 @@
 import { Container, Section } from "../../../components/craft";
+import Image from "next/image";
 
 export default function About() {
   return (
@@ -12,6 +13,14 @@ export default function About() {
       flex flex-col gap-8
       indent-4 md:indent-0 mt-24"
       >
+        <Image
+          src="/matana-building.jpg"
+          alt="Matana Tower Image"
+          width={600}
+          height={450}
+          layout="responsive"
+          loading="lazy"
+        />
         <h5
           className="
         rounded-md border bg-muted/50 p-4 text-muted-foreground
