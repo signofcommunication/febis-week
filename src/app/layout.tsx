@@ -10,6 +10,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Matana Febis Week",
   description: "Febis Week Matana 2024",
+  icons: "/matana-icon.png",
 };
 
 export default function RootLayout({

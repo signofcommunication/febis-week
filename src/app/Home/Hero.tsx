@@ -1,9 +1,4 @@
-// Third-party library imports
-import Balancer from "react-wrap-balancer";
-
-// Local component imports
 import { Container, Section } from "../../../components/craft";
-import { Button } from "../../../components/ui/button";
 
 const Hero = () => {
   return (
