@@ -14,7 +14,7 @@ export default function About() {
       indent-4 md:indent-0 mt-24"
       >
         <Image
-          src="/matana-building.jpg"
+          src="/matana-building-banner.jpg"
           alt="Matana Tower Image"
           width={600}
           height={450}
