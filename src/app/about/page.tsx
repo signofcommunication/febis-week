@@ -1,5 +1,11 @@
 import { Container, Section } from "../../../components/craft";
+import { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "About",
+  description: "Tentang Febis Week 2024",
+};
 
 export default function About() {
   return (

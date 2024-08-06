@@ -1,8 +1,13 @@
 import { Container, Section } from "@/components/craft";
 import { Undo2 } from "lucide-react";
+import { Metadata } from "next";
 import Balancer from "react-wrap-balancer";
 import FeaturedImageGallery from "@/components/gallery";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Febis Week 2023",
+};
 
 type FeatureDescription = {
   text: string;

@@ -1,5 +1,11 @@
 import { CardWithForm } from "@/components/card";
 import { Container, Section } from "../../../components/craft";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Registration",
+  description: "Registration Febis Week 2024",
+};
 
 type CardContent = {
   title: string;

@@ -34,6 +34,9 @@ const featureText: FeatureText[] = [
   {
     image: "/sindonews.png",
   },
+  {
+    image: "/indonesia-dalam-berita.jpg",
+  },
 ];
 
 const MediaSponsor = () => {

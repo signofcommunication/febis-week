@@ -1,12 +1,18 @@
 import { Container, Section } from "../../../components/craft";
 import { Modal } from "@/components/modal";
 import { CompetitionModal } from "@/components/competetition_modal";
+import { Metadata } from "next";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "../../../components/ui/accordion";
+
+export const metadata: Metadata = {
+  title: "Febis Week 2024 Programs",
+  description: "Febis Week 2024 Programs",
+};
 
 type ProgramItems = {
   title: string;
