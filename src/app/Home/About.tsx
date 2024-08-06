@@ -4,7 +4,7 @@ import { Container, Section } from "../../../components/craft";
 const About = () => {
   return (
     <Section>
-      <h4 className="rounded-md border bg-muted/50 p-4 text-muted-foreground sm:text-center">
+      <h3 className="rounded-md border bg-muted/50 p-4 text-muted-foreground text-xl sm:text-center">
         <Balancer>
           Febis Week merupakan acara yang rutin dilakukan setiap tahunnya oleh
           fakultas ekonomi, bisnis, dan sosial Universitas Matana, tidak hanya
@@ -20,7 +20,7 @@ const About = () => {
           dunia sekolah dan perkuliahan, mempersiapkan para siswa untuk masa
           depan yang penuh tantangan dan peluang.
         </Balancer>
-      </h4>
+      </h3>
     </Section>
   );
 };
