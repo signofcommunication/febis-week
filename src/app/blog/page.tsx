@@ -20,6 +20,8 @@ export default function Blog() {
                 alt="Github"
                 width={600}
                 height={450}
+                quality={100}
+                sizes="100vw"
                 layout="responsive"
                 loading="lazy"
               />
@@ -52,6 +54,8 @@ export default function Blog() {
                 alt="Github"
                 width={600}
                 height={450}
+                quality={100}
+                sizes="100vw"
                 layout="responsive"
                 loading="lazy"
               />

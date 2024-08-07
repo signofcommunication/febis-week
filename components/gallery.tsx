@@ -69,21 +69,25 @@ export default function FeaturedImageGallery() {
           <CircleArrowLeft />
         </button>
       </div>
-      <div className="grid grid-cols-5 gap-4">
-        {data.map(({ imageLink }, index) => (
-          <div key={index}>
-            <Image
-              src={imageLink}
-              className="h-20 max-w-full cursor-pointer rounded-lg object-cover object-center"
-              width={500}
-              height={500}
-              quality={100}
-              sizes="100vw"
-              alt={`Gallery image ${index + 1}`}
-              onClick={() => setActiveIndex(index)} // Set active index directly
-            />
-          </div>
-        ))}
+      <div className="overflow-x-auto scrollbar-hide">
+        <div className="grid grid-cols-5 gap-4">
+          {" "}
+          {/* Inner container */}
+          {data.map(({ imageLink }, index) => (
+            <div key={index}>
+              <Image
+                src={imageLink}
+                className="h-20 max-w-full cursor-pointer rounded-lg object-cover object-center"
+                quality={100}
+                width={500}
+                height={500}
+                sizes="100vw"
+                alt={`Gallery image ${index + 1}`}
+                onClick={() => setActiveIndex(index)} // Set active index directly
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
