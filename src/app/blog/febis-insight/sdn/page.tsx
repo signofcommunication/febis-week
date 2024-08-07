@@ -1,4 +1,5 @@
 import { Section, Container } from "@/components/craft";
+import FebisInsightGallery from "@/components/gallery-febis-insight";
 import Image from "next/image";
 import Balancer from "react-wrap-balancer";
 
@@ -24,7 +25,10 @@ export default function Page() {
           Gunungsari Kabupaten Lombok Barat. Lokasi sekolah ini persisnya berada
           di daerah perbukitan. Untuk bisa sampai ke sekolah ini, warga harus
           melewati jalan setapak dengan lebar kurang lebih 3 meter.
-        </Balancer>
+        </Balancer>{" "}
+        <br />
+        <br />
+        <FebisInsightGallery />
       </Container>
     </Section>
   );

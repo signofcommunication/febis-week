@@ -1,8 +1,6 @@
 import { Container, Section } from "@/components/craft";
 import { Metadata } from "next";
 import { BlogCard } from "@/components/blog-card";
-import FebisInsightGallery from "@/components/gallery-febis-insight";
-import Balancer from "react-wrap-balancer";
 
 export const metadata: Metadata = {
   title: "Febis Insight",
