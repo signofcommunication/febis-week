@@ -43,6 +43,8 @@ const Sponsor = () => {
                 height={"150"}
                 alt="Picture of the author"
                 className="m-auto"
+                quality={100}
+                sizes="100vw"
                 key={index}
               />
             ))}

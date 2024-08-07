@@ -29,6 +29,8 @@ export default function Footer() {
                 src={Logo}
                 alt="Logo"
                 width={200}
+                quality={100}
+                sizes="100vw"
                 height={27.27}
                 className="transition-all hover:opacity-75 dark:invert"
               ></Image>

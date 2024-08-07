@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { CircleArrowLeft, CircleArrowRight } from "lucide-react";
+import Image from "next/image";
 
 type FeatureText = {
   imageLink: string;
@@ -10,13 +11,13 @@ export default function FebisInsightGallery() {
   const [activeIndex, setActiveIndex] = useState(0);
   const data: FeatureText[] = [
     {
-      imageLink: "../febis-insight-1.jpg",
+      imageLink: "/febis-insight-1.jpg",
     },
     {
-      imageLink: "../febis-insight-2.jpg",
+      imageLink: "/febis-insight-2.jpg",
     },
     {
-      imageLink: "../febis-insight-3.jpg",
+      imageLink: "/febis-insight-3.jpg",
     },
   ];
 
@@ -34,9 +35,13 @@ export default function FebisInsightGallery() {
   return (
     <div className="grid gap-4">
       <div className="relative">
-        <img
+        <Image
           className="h-auto w-full max-w-full rounded-lg object-cover object-center md:h-[480px]"
           src={data[activeIndex].imageLink} // Access image based on activeIndex
+          width={500}
+          height={500}
+          quality={100}
+          sizes="100vw"
           alt="Featured Image"
         />
         <button
@@ -57,9 +62,13 @@ export default function FebisInsightGallery() {
       <div className="grid grid-cols-5 gap-4">
         {data.map(({ imageLink }, index) => (
           <div key={index}>
-            <img
+            <Image
               src={imageLink}
               className="h-20 max-w-full cursor-pointer rounded-lg object-cover object-center"
+              width={500}
+              height={500}
+              quality={100}
+              sizes="100vw"
               alt={`Gallery image ${index + 1}`}
               onClick={() => setActiveIndex(index)} // Set active index directly
             />

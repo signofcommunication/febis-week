@@ -53,7 +53,6 @@ export default function Blog() {
                 width={600}
                 height={450}
                 layout="responsive"
-                // placeholder="blur"
                 loading="lazy"
               />
             </div>
