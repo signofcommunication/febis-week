@@ -70,9 +70,9 @@
 }
 
 body {
-  background: url("../../public/bg-body.jpg");
+  /* background: url("../../public/bg-body.jpg"); */
   background-size: cover; /* or contain, or 100% 100% */
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   /*background-position: center center; */
 }
 
@@ -81,6 +81,18 @@ body {
   background-size: contain; /* or contain, or 100% 100% */
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+#timeline {
+  background: url("../../public/timeline.png");
+  background-size: contain; /* or contain, or 100% 100% */
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 50vh;
+}
+
+#programs {
+  background-color: #14325c;
 }
 
 @media (max-width: 400px) {

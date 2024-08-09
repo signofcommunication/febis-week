@@ -4,21 +4,16 @@ import { Container, Section } from "../../../components/craft";
 const About = () => {
   return (
     <Section>
+      <h1 className="text-center text-4xl font-bold my-4">
+        <Balancer>Febis Week 2024</Balancer>
+      </h1>
       <h3 className="rounded-md border bg-muted/50 p-4 text-muted-foreground text-xl sm:text-center sm:text-lg">
         <Balancer>
-          Febis Week merupakan acara yang rutin dilakukan setiap tahunnya oleh
-          fakultas ekonomi, bisnis, dan sosial Universitas Matana, tidak hanya
-          menjadi acara yang dinanti-nantikan di kalender akademik, tetapi juga
-          menjadi wadah penting bagi para siswa sekolah untuk merasakan
-          pengalaman belajar yang mendalam di lingkungan universitas. Febis Week
-          membantu mengasah pemikiran para siswa/i untuk lebih berpikir kritis,
-          kreatif, dan inovatif. Tak hanya itu, acara ini juga menjadi platform
-          bagi para siswa untuk mengembangkan jiwa kewirausahaan dan
-          kepemimpinan, memupuk semangat mereka untuk menjadi agen perubahan
-          yang berkontribusi bagi masa depan bangsa. Febis Week bukan sekadar
-          acara tahunan, tetapi sebuah transformasi edukasi yang menjembatani
-          dunia sekolah dan perkuliahan, mempersiapkan para siswa untuk masa
-          depan yang penuh tantangan dan peluang.
+          Febis week merupakan acara yang rutin dilakukan setiap tahunnya oleh
+          Fakultas Ekonomi, Bisnis, dan Ilmu Sosial Universitas Matana. Febis
+          week merupakan rangkaian acara seminar, workshop, dan kompetisi yang
+          melibatkan siswa siswi SMA/SMK. Tahun ini, Febis Week mengusung tema
+          Creative <b>Economy for Sustainable Development</b>
         </Balancer>
       </h3>
     </Section>

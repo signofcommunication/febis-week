@@ -18,6 +18,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { ModeToggle } from "@/components/mode-toggle";
+import Image from "next/image";
 
 export function NavBar() {
   return (
@@ -76,7 +77,13 @@ export function NavBar() {
         </Dialog>
         <NavigationMenu>
           <NavigationMenuList className="max-[825px]:hidden ">
-            <Link href="/" className="pl-2">
+            <Link href="/" className="pl-2 flex">
+              {/* <Image
+                src="/logo-febis-week.png"
+                width={100}
+                height={100}
+                alt="Logo febis week"
+              /> */}
               <h1 className="font-bold">Febis Week</h1>
             </Link>
           </NavigationMenuList>
