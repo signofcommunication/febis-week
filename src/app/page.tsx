@@ -4,6 +4,7 @@ import Programs from "./Home/Programs";
 import Recap from "./Home/Recap";
 import SponsorSection from "./Home/SponsorsSection";
 import Timeline from "./Home/Timeline";
+import CountDown from "@/components/coundown-timer";
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
       <Programs />
       <Recap />
       <SponsorSection />
-      {/* CountDown */}
+      <CountDown />
       <Timeline />
     </main>
   );
