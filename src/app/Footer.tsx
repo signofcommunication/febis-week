@@ -1,40 +1,56 @@
-// React and Next.js imports
 import Image from "next/image";
 import Link from "next/link";
-
-// Third-party library imports
 import Balancer from "react-wrap-balancer";
-
-// UI component imports
 import { Button } from "@/components/ui/button";
-
-// Icon imports
 import { Facebook, Instagram, Phone } from "lucide-react";
-
-// Local component imports
 import { Section, Container } from "@/components/craft";
-
-// Asset imports
 import Logo from "@/public/Logo-Matana_Vertikal-dan-Horizontal-02-1-800x291-1.png";
 
 export default function Footer() {
   return (
     <footer>
       <Section>
+        <Container>
+          <Link href="/">
+            <h3 className="sr-only">brijr/components</h3>
+            <Image
+              src={Logo}
+              alt="Logo"
+              width={200}
+              quality={100}
+              sizes="100vw"
+              height={27.27}
+              className="transition-all hover:opacity-75 dark:invert"
+            ></Image>
+          </Link>
+        </Container>
+        <Container className="grid gap-12 sm:justify-items-stretch items-center md:grid-cols-[0.5fr_0.5fr_0.5fr]">
+          <div className="flex flex-col gap-4 justify-end">
+            {/* <h5>Program Studi</h5> */}
+            <p>Lomba Cerdas Cermat</p>
+            <p>Agustin Praba (0896-6861-6466)</p>
+          </div>
+          <div className="flex flex-col gap-4 justify-end">
+            <p>Essay & Debate</p>
+            <p>Gladys (0855-1199-114)</p>
+          </div>
+          <div className="flex flex-col gap-4 justify-end">
+            <p>Design Produk</p>
+            <p>Melviana (0822-1374-9305)</p>
+          </div>
+        </Container>
+        <Container className="grid gap-10 sm:justify-items-stretch items-center md:grid-cols-[2.3fr_1fr]">
+          <div className="flex flex-col">
+            <p>Sponsorship</p>
+            <p>Vallerie (0852-2218-2406)</p>
+          </div>
+          <div className="flex flex-col">
+            <p>Media Partner</p>
+            <p>Yoga (0882-0050-06513)</p>
+          </div>
+        </Container>
         <Container className="grid gap-12 md:grid-cols-[1.5fr_0.5fr_0.5fr]">
           <div className="not-prose flex flex-col gap-6">
-            <Link href="/">
-              <h3 className="sr-only">brijr/components</h3>
-              <Image
-                src={Logo}
-                alt="Logo"
-                width={200}
-                quality={100}
-                sizes="100vw"
-                height={27.27}
-                className="transition-all hover:opacity-75 dark:invert"
-              ></Image>
-            </Link>
             <Balancer className="font-bold text-2xl">
               Matana University Tower
             </Balancer>
