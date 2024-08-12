@@ -9,8 +9,6 @@ export default function Recap() {
       </h1>
       <hr />
       <iframe
-        width={700}
-        height="315"
         src="https://www.youtube.com/embed/z62x5V27MCU?si=HOEyrmzIwemXehQA"
         title="YouTube video player"
         frameBorder="0"
