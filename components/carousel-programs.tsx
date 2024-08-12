@@ -65,8 +65,8 @@ export function CarouselPrograms() {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
+      {/* <CarouselPrevious />
+      <CarouselNext /> */}
     </Carousel>
   );
 }
