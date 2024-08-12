@@ -42,17 +42,32 @@ const contents: CardContent[] = [
 ];
 
 export default function Registration() {
+  const firstRow = contents.slice(0, 2);
+  const secondRow = contents.slice(2);
+
   return (
     <Section>
-      <Container className="flex flex-row-reverse flex-wrap justify-center mt-24">
-        {contents.map((content, index) => (
-          <CardWithForm
-            key={index}
-            title={content.title}
-            link={content.link}
-            imageUrl={content.imageUrl}
-          />
-        ))}
+      <Container className="flex flex-col mt-24">
+        <div className="flex sm:flex-row flex-col gap-x-4">
+          {secondRow.map((content, index) => (
+            <CardWithForm
+              key={index}
+              title={content.title}
+              link={content.link}
+              imageUrl={content.imageUrl}
+            />
+          ))}
+        </div>
+        <div className="flex flex-wrap sm:flex-nowrap sm:flex-row flex-col gap-x-4">
+          {firstRow.map((content, index) => (
+            <CardWithForm
+              key={index}
+              title={content.title}
+              link={content.link}
+              imageUrl={content.imageUrl}
+            />
+          ))}
+        </div>
       </Container>
     </Section>
   );
