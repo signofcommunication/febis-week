@@ -44,7 +44,7 @@ const MediaSponsor = () => {
     <Section>
       <Container className="not-prose">
         <div className="flex flex-col">
-          <h3 className="text-4xl text-center mb-3">
+          <h3 className="text-4xl text-center font-bold mb-3">
             <Balancer>Media Sponsors</Balancer>
           </h3>
 

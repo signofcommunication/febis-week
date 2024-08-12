@@ -28,7 +28,7 @@ const Sponsor = () => {
   return (
     <Section>
       <Container className="not-prose">
-        <h3 className="text-4xl text-center mb-3">
+        <h3 className="text-4xl text-center font-bold mb-3">
           <Balancer>Past Sponsors</Balancer>
         </h3>
         <hr />

@@ -18,7 +18,6 @@ import {
   SheetTrigger,
   SheetFooter,
 } from "@/components/ui/sheet";
-import { ModeToggle } from "@/components/mode-toggle";
 import Image from "next/image";
 
 export function NavBar() {
@@ -72,7 +71,6 @@ export function NavBar() {
                   </Button>
                 </Link>
               </DialogClose>
-              <ModeToggle />
             </div>
           </SheetContent>
         </Dialog>
@@ -105,7 +103,6 @@ export function NavBar() {
           <Link href="/registration">
             <Button variant="ghost">Registration</Button>
           </Link>
-          <ModeToggle />
         </div>
       </div>
     </div>

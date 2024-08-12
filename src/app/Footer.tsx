@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Balancer from "react-wrap-balancer";
 import { Button } from "@/components/ui/button";
-import { Facebook, Instagram, Phone } from "lucide-react";
+import { Facebook, Instagram, Phone, Youtube } from "lucide-react";
 import { Section, Container } from "@/components/craft";
 import Logo from "@/public/Logo-Matana_Vertikal-dan-Horizontal-02-1-800x291-1.png";
 
@@ -45,7 +45,7 @@ export default function Footer() {
             </p>
             <p className="text-white">Agustin Praba (0896-6861-6466)</p>
           </div>
-          <div className="flex flex-col gap-4 justify-end">
+          <div className="flex flex-col gap-4 justify-end tex-start sm:text-center">
             <p className="matana-base-color-orange font-bold">Essay & Debate</p>
             <p className="text-white">Gladys (0855-1199-114)</p>
           </div>
@@ -59,7 +59,7 @@ export default function Footer() {
             <p className="matana-base-color-orange font-bold">Sponsorship</p>
             <p className="text-white">Vallerie (0852-2218-2406)</p>
           </div>
-          <div className="flex justify-evenly">
+          <div className="flex justify-around">
             <Link href="https://www.instagram.com/matana_univ/?hl=en">
               <Button variant="outline" size="icon">
                 <Instagram />
@@ -73,6 +73,11 @@ export default function Footer() {
             <Link href="https://wa.me/081287775999">
               <Button variant="outline" size="icon">
                 <Phone />
+              </Button>
+            </Link>
+            <Link href="/">
+              <Button variant="outline" size="icon">
+                <Youtube />
               </Button>
             </Link>
           </div>
