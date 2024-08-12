@@ -3,11 +3,18 @@ import Balancer from "react-wrap-balancer";
 
 export default function Recap() {
   return (
-    <Section className="w-full flex flex-col items-center justify-center p-8">
+    <Section className="w-full flex flex-col items-center justify-center">
       <h1 className="text-center text-4xl font-bold my-4">
         <Balancer>Febis Week 2023 Recap</Balancer>
       </h1>
-      <div style={{ width: "100%", minWidth: "400px", maxWidth: "800px" }}>
+      <div
+        style={{
+          width: "100%",
+          minWidth: "400px",
+          maxWidth: "800px",
+          padding: "0 10px",
+        }}
+      >
         <div
           style={{
             position: "relative",
