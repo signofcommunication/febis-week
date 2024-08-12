@@ -63,7 +63,9 @@ export default function Blog() {
             <div className="flex flex-col gap-6 py-8 content-container">
               <h1 className="uppercase  font-bold text-lg">Febis Insight</h1>
               <p className="font-light leading-[1.4] opacity-70 text-content">
-                Dapatkan update seputar kegiatan dan aktivitas FEBIS di sini.
+                Dapatkan <i>fun fact</i> dan info menarik terkait Ekonomi
+                Kreatif disini. Info menarik akan di update pada hari minggu
+                setiap minggunya.
               </p>
               <div className="not-prose flex justify-center items-center gap-2 button-container">
                 <Button className="w-fit" asChild>

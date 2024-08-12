@@ -73,7 +73,7 @@ export default function Page() {
         <h1 className="text-3xl text-center font-bold pb-8">
           <Balancer>FEBIS WEEK 2023</Balancer>
         </h1>
-        <Balancer>
+        <p className="text-justify">
           Fakultas Ekonomi, Bisnis, dan Ilmu Sosial (FEBIS) Universitas Matana
           menggelar acara tahunan FEBIS WEEK dengan tema `Sustainable and
           Innovation Economy`. Acara yang berlangsung dari tanggal 28 Agustus
@@ -84,7 +84,7 @@ export default function Page() {
           yang mengikuti lomba dan terdapat beberapa siswa/i yang menampilkan
           bakatnya dalam acara penutupan Febis Week 2023 di Tangcity Mall
           Tangerang.
-        </Balancer>
+        </p>
         <br />
         <br />
         <Balancer>
@@ -93,7 +93,9 @@ export default function Page() {
 
         <ol className="list-decimal">
           {textDescription.map((value, index) => (
-            <li key={index}>{value.text}</li>
+            <li key={index} className="text-justify">
+              {value.text}
+            </li>
           ))}
         </ol>
         <br />
