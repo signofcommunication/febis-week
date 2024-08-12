@@ -1,4 +1,3 @@
-import { Container, Section } from "../../../components/craft";
 import Balancer from "react-wrap-balancer";
 
 const Timeline = () => {

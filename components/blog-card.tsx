@@ -3,7 +3,7 @@ import Link from "next/link";
 
 interface CardParameters {
   title: string;
-  description: string;
+  description?: string;
   image: string;
   link: string;
 }
@@ -15,7 +15,7 @@ const BlogCard: React.FC<CardParameters> = ({
   link,
 }) => {
   return (
-    <div className="relative flex flex-col text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-80 mx-1">
+    <div className="relative flex flex-col text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-full max-w-sm mx-1 sm:w-full md:w-80">
       <div className="relative h-56 mx-4 mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40">
         <Image
           src={image}
@@ -24,6 +24,7 @@ const BlogCard: React.FC<CardParameters> = ({
           sizes="100vw"
           width={500}
           height={500}
+          className="object-cover w-full h-full"
         />
       </div>
       <div className="p-6">

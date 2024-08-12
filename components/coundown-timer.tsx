@@ -49,7 +49,7 @@ export default function CountDown() {
   return (
     <main className="flex pb-24 flex-col items-center justify-between ">
       <h1 className="text-center text-4xl font-bold">
-        <Balancer>Programs</Balancer>
+        <Balancer>Countdown</Balancer>
       </h1>
       <p className="my-8 text-xl">Febis Week Close Registration</p>
       <div className="flex items-start justify-center w-full gap-4 count-down-main">
