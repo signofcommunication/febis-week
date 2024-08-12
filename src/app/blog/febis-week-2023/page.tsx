@@ -65,11 +65,14 @@ export default function Page() {
   return (
     <Section>
       <Container className="mt-24">
-        <div className="mb-10">
+        {/* <div className="mb-10">
           <Link href="/blog">
             <Undo2 />
           </Link>
-        </div>
+        </div> */}
+        <h1 className="text-3xl text-center font-bold pb-8">
+          <Balancer>FEBIS WEEK 2023</Balancer>
+        </h1>
         <Balancer>
           Fakultas Ekonomi, Bisnis, dan Ilmu Sosial (FEBIS) Universitas Matana
           menggelar acara tahunan FEBIS WEEK dengan tema `Sustainable and
