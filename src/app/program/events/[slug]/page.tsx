@@ -59,18 +59,18 @@ export default function Events({ params }: { params: { slug: string } }) {
           />
           <div>
             <p
-              className="p-0 sm:px-8 pt-8 text-justify"
+              className="p-0 sm:px-8 text-justify"
               dangerouslySetInnerHTML={{ __html: value.description }}
             ></p>
             {value.description2 && (
               <p
-                className="p-0 sm:px-8 pt-8text-justify"
+                className="p-0 sm:px-8 text-justify"
                 dangerouslySetInnerHTML={{ __html: value.description2 }}
               ></p>
             )}
             {value.description3 && (
               <p
-                className="p-0 sm:px-8 pt-8 text-justify"
+                className="p-0 sm:px-8 text-justify"
                 dangerouslySetInnerHTML={{ __html: value.description3 }}
               ></p>
             )}

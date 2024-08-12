@@ -71,10 +71,10 @@ export default function Competitions({ params }: { params: { slug: string } }) {
           />
           <div>
             <p
-              className="p-0 sm:px-8 pt-8 text-justify"
+              className="p-0 sm:px-8 text-justify"
               dangerouslySetInnerHTML={{ __html: value.description }}
             ></p>
-            <div className="information p-0 sm:px-8 pt-8 text-justify">
+            <div className="information p-0 sm:px-8 text-justify">
               <span className="font-bold text-xl">Information</span>
               <ul className="list-disc px-4">
                 <li>Peserta: siswa/i SMA/SMK/sederajat</li>

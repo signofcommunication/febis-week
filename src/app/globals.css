@@ -101,6 +101,11 @@ body {
   margin: 0 auto;
 }
 
+/* Footer */
+.matana-base-color-orange {
+  color: #fbad1b;
+}
+
 @media (max-width: 400px) {
   /* CSS styles for phones */
   #febis-week-banner {
