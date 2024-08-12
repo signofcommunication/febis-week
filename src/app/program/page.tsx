@@ -8,6 +8,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "../../../components/ui/accordion";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Febis Week 2024 Programs",
@@ -145,6 +146,17 @@ export default function Program() {
               </AccordionItem>
             </Accordion>
           ))}
+          <Link href="/program/events/seminar">Seminar</Link>
+          <Link href="/program/events/workshop">Workshop</Link>
+          <Link href="/program/competitions/essay-debat">
+            Lomba Essay Debat
+          </Link>
+          <Link href="/program/competitions/cerdas-cermat">
+            Lomba Cerdas Cermat
+          </Link>
+          <Link href="/program/competitions/desain-produk">
+            Lomba Desain Produk
+          </Link>
         </div>
       </Container>
     </Section>
