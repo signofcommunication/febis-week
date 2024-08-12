@@ -99,6 +99,7 @@ body {
 #home-programs-carousel {
   width: 50vw;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 /* Footer */
