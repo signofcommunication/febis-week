@@ -8,7 +8,7 @@ import CountDown from "@/components/coundown-timer";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between px-10">
+    <main className="flex min-h-screen flex-col items-center justify-between">
       <Hero />
       <About />
       <Programs />

@@ -47,7 +47,7 @@ export default function CountDown() {
   const { days, hours, minutes, seconds } = time || {};
 
   return (
-    <main className="flex pb-24 flex-col items-center justify-between ">
+    <main className="flex px-10 pb-24 flex-col items-center justify-between ">
       <h1 className="text-center text-4xl font-bold">
         <Balancer>Countdown</Balancer>
       </h1>
