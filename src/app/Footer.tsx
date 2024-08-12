@@ -8,35 +8,8 @@ import Logo from "@/public/Logo-Matana_Vertikal-dan-Horizontal-02-1-800x291-1.pn
 
 export default function Footer() {
   return (
-    <footer>
+    <footer className="matana-base-color-blue">
       <Section>
-        <Container className="grid gap-12 sm:justify-items-stretch items-center md:grid-cols-[0.5fr_0.5fr_0.5fr]">
-          <div className="flex flex-col gap-4 justify-end">
-            {/* <h5>Program Studi</h5> */}
-            <p className="matana-base-color-orange font-bold">
-              Lomba Cerdas Cermat
-            </p>
-            <p>Agustin Praba (0896-6861-6466)</p>
-          </div>
-          <div className="flex flex-col gap-4 justify-end">
-            <p className="matana-base-color-orange font-bold">Essay & Debate</p>
-            <p>Gladys (0855-1199-114)</p>
-          </div>
-          <div className="flex flex-col gap-4 justify-end">
-            <p className="matana-base-color-orange font-bold">Design Produk</p>
-            <p>Melviana (0822-1374-9305)</p>
-          </div>
-        </Container>
-        <Container className="grid gap-10 sm:justify-items-stretch items-center md:grid-cols-[2.3fr_1fr]">
-          <div className="flex flex-col">
-            <p className="matana-base-color-orange font-bold">Sponsorship</p>
-            <p>Vallerie (0852-2218-2406)</p>
-          </div>
-          <div className="flex flex-col">
-            <p className="matana-base-color-orange font-bold">Media Partner</p>
-            <p>Yoga (0882-0050-06513)</p>
-          </div>
-        </Container>
         <Container className="grid gap-12 md:grid-cols-[1.5fr_0.5fr_0.5fr]">
           <div className="not-prose flex flex-col gap-6">
             <Link href="/">
@@ -51,10 +24,10 @@ export default function Footer() {
                 className="transition-all hover:opacity-75 dark:invert"
               ></Image>
             </Link>
-            <Balancer className="font-bold text-2xl">
+            <Balancer className="font-bold text-2xl text-white">
               Matana University Tower
             </Balancer>
-            <p>
+            <p className="text-white">
               <Balancer>
                 <Link href="https://goo.gl/maps/CgDyA6nBBWuLCi687">
                   Jl. CBD Barat Kav. 1. Gading Serpong <br /> Tangerang - 15810,
@@ -63,22 +36,30 @@ export default function Footer() {
               </Balancer>
             </p>
           </div>
-          <div className="flex flex-col gap-2 justify-end">
+        </Container>
+        <Container className="grid gap-12 sm:justify-items-stretch items-center md:grid-cols-[0.5fr_0.5fr_0.5fr]">
+          <div className="flex flex-col gap-4 justify-end">
             {/* <h5>Program Studi</h5> */}
-            <Link href="https://manajemen.matanauniversity.ac.id/">
-              Manajemen
-            </Link>
-            <Link href="https://akuntansi.matanauniversity.ac.id/">
-              Akuntansi
-            </Link>
+            <p className="matana-base-color-orange font-bold">
+              Lomba Cerdas Cermat
+            </p>
+            <p className="text-white">Agustin Praba (0896-6861-6466)</p>
           </div>
-          <div className="flex flex-col gap-2 justify-end">
-            <Link href="https://hospar.matanauniversity.ac.id/">Hospar</Link>
-            <Link href="https://matanauniversity.ac.id/">Prodi Lainnya</Link>
+          <div className="flex flex-col gap-4 justify-end">
+            <p className="matana-base-color-orange font-bold">Essay & Debate</p>
+            <p className="text-white">Gladys (0855-1199-114)</p>
+          </div>
+          <div className="flex flex-col gap-4 justify-end">
+            <p className="matana-base-color-orange font-bold">Design Produk</p>
+            <p className="text-white">Melviana (0822-1374-9305)</p>
           </div>
         </Container>
-        <Container className="not-prose flex flex-col justify-between gap-6 border-t md:flex-row md:items-center md:gap-2">
-          <div className="flex gap-2">
+        <Container className="grid gap-12 sm:justify-items-stretch items-center md:grid-cols-[1fr_1fr_1fr]">
+          <div className="flex flex-col">
+            <p className="matana-base-color-orange font-bold">Sponsorship</p>
+            <p className="text-white">Vallerie (0852-2218-2406)</p>
+          </div>
+          <div className="flex justify-evenly">
             <Link href="https://www.instagram.com/matana_univ/?hl=en">
               <Button variant="outline" size="icon">
                 <Instagram />
@@ -95,9 +76,16 @@ export default function Footer() {
               </Button>
             </Link>
           </div>
-          <p className="text-muted-foreground">
+          <div className="flex flex-col">
+            <p className="matana-base-color-orange font-bold">Media Partner</p>
+            <p className="text-white">Yoga (0882-0050-06513)</p>
+          </div>
+        </Container>
+
+        <Container className="not-prose flex flex-col justify-between gap-6 border-t md:flex-row md:items-center md:gap-2">
+          <p className="text-muted-foreground text-center text-white">
             ©{" "}
-            <a href="https://github.com/brijr/components">Matana University</a>.
+            <a href="https://www.matanauniversity.ac.id/">Matana University</a>.
             All rights reserved. 2024-present.
           </p>
         </Container>

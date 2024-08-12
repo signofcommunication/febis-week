@@ -31,10 +31,10 @@ const Sponsor = () => {
         <h3 className="text-4xl text-center mb-3">
           <Balancer>Past Sponsors</Balancer>
         </h3>
+        <hr />
         <div className="flex flex-wrap justify-center">
           {" "}
           {/* Added flex-wrap for columns */}
-          <hr />
           <div className="grid grid-cols-3 gap-4 items-center">
             {" "}
             {/* Grid for 3 columns */}
