@@ -53,14 +53,14 @@ export default function Competitions({ params }: { params: { slug: string } }) {
   return (
     <Section>
       <Container className="mt-24">
-        <h1 className="text-2xl uppercase font-bold text-center">
+        <h1 className="text-3xl uppercase font-bold text-center">
           <Balancer>{value.title.toUpperCase()}</Balancer>
         </h1>
         <h1 className="text-xl uppercase font-bold text-center">
           <Balancer>{value.date}</Balancer>
         </h1>
 
-        <div className="flex pt-8 ">
+        <div className="flex flex-col sm:flex-row pt-8">
           <Image
             src={value.image}
             alt={`${value.id}-image`}
@@ -71,10 +71,10 @@ export default function Competitions({ params }: { params: { slug: string } }) {
           />
           <div>
             <p
-              className="px-8"
+              className="p-0 sm:px-8 pt-8 text-justify"
               dangerouslySetInnerHTML={{ __html: value.description }}
             ></p>
-            <div className="information px-8">
+            <div className="information p-0 sm:px-8 pt-8 text-justify">
               <span className="font-bold text-xl">Information</span>
               <ul className="list-disc px-4">
                 <li>Peserta: siswa/i SMA/SMK/sederajat</li>

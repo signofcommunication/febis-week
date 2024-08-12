@@ -51,7 +51,7 @@ export default function CountDown() {
       <h1 className="text-center text-4xl font-bold">
         <Balancer>Countdown</Balancer>
       </h1>
-      <p className="my-8 text-xl">Febis Week Close Registration</p>
+      <p className="my-8 text-xl uppercase">Febis Week Close Registration</p>
       <div className="flex items-start justify-center w-full gap-4 count-down-main">
         <div className="timer w-16">
           <div className=" bg-indigo-600 py-4 px-2 rounded-lg overflow-hidden">

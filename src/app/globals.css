@@ -77,7 +77,7 @@ body {
 }
 
 #febis-week-banner {
-  background: url("../../public/febis-week-2023-thumbnail.jpg");
+  background: url("../../public/background-febis-week.png");
   background-size: cover; /* or contain, or 100% 100% */
   background-repeat: no-repeat;
   background-position: center center;

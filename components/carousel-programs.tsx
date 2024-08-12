@@ -19,7 +19,7 @@ type ProgramsListType = {
 const programsLists: ProgramsListType[] = [
   {
     title: "Seminar",
-    image: "/AXL05224.jpg",
+    image: "/AXL05209.jpg",
     link: "/",
   },
   {
@@ -29,24 +29,29 @@ const programsLists: ProgramsListType[] = [
   },
   {
     title: "Accounting Competition",
-    image: "/cover-accounting.jpg",
+    image: "/lomba-cerdas-cermat-akuntansi.png",
     link: "/",
   },
   {
     title: "Product Design Competition",
-    image: "/cover-product-design.jpg",
+    image: "/lomba-desain-produk.png",
     link: "/",
   },
   {
     title: "Essay & Debate Competition",
-    image: "/cover-debat.jpg",
+    image: "/lomba-essay-debat.png",
     link: "/",
   },
 ];
 
 export function CarouselPrograms() {
   return (
-    <Carousel id="home-programs-carousel border border-sky-500">
+    <Carousel
+      opts={{
+        align: "start",
+      }}
+      id="home-programs-carousel border border-sky-500"
+    >
       <CarouselContent className="-ml-1 mx-auto">
         {programsLists.map((program, index) => (
           <CarouselItem key={index} className="pl-1 sm:basis-full md:basis-1/2">

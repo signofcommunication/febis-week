@@ -41,8 +41,8 @@ const Sponsor = () => {
             {featureText.map(({ image }, index) => (
               <Image
                 src={image}
-                width="150"
-                height="150"
+                width="100"
+                height="100"
                 alt="Picture of the author"
                 className="m-auto"
                 quality={100}

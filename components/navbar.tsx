@@ -78,13 +78,13 @@ export function NavBar() {
         <NavigationMenu>
           <NavigationMenuList className="max-[825px]:hidden ">
             <Link href="/" className="pl-2 flex">
-              {/* <Image
-                src="/logo-febis-week.png"
+              <Image
+                src="/logo-matana-febis-week-web.png"
                 width={100}
                 height={100}
                 alt="Logo febis week"
-              /> */}
-              <h1 className="font-bold">Febis Week</h1>
+              />
+              {/* <h1 className="font-bold">Febis Week</h1> */}
             </Link>
           </NavigationMenuList>
         </NavigationMenu>

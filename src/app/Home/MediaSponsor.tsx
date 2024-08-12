@@ -54,8 +54,8 @@ const MediaSponsor = () => {
             {featureText.map(({ image }, index) => (
               <Image
                 src={image}
-                width={"125"}
-                height={"125"}
+                width={"100"}
+                height={"100"}
                 alt="Picture of the author"
                 className="mx-2"
                 key={index}
