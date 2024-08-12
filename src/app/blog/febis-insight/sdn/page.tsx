@@ -1,7 +1,6 @@
 import { Section, Container } from "@/components/craft";
 import FebisInsightGallery from "@/components/gallery-febis-insight";
 import Image from "next/image";
-import Balancer from "react-wrap-balancer";
 
 export default function Page() {
   return (

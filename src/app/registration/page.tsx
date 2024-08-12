@@ -27,17 +27,17 @@ const contents: CardContent[] = [
   {
     title: "Accounting Competition",
     link: "https://docs.google.com/forms/d/e/1FAIpQLSeseCRc_QTo41tXnO03qYeXvWvkmiNpI9d0nO_KUKpJdUyWBA/viewform",
-    imageUrl: `bg-[url('../../public/cover-accounting.jpg')]`,
+    imageUrl: `bg-[url('../../public/lomba-cerdas-cermat-akuntansi.png')]`,
   },
   {
     title: "Product Design Competition",
     link: "https://docs.google.com/forms/d/e/1FAIpQLSeseCRc_QTo41tXnO03qYeXvWvkmiNpI9d0nO_KUKpJdUyWBA/viewform",
-    imageUrl: `bg-[url('../../public/cover-product-design.jpg')]`,
+    imageUrl: `bg-[url('../../public/lomba-desain-produk.png')]`,
   },
   {
     title: "Essay & Debate Competition",
     link: "https://docs.google.com/forms/d/e/1FAIpQLSeseCRc_QTo41tXnO03qYeXvWvkmiNpI9d0nO_KUKpJdUyWBA/viewform",
-    imageUrl: `bg-[url('../../public/cover-debat.jpg')]`,
+    imageUrl: `bg-[url('../../public/lomba-essay-debat.png')]`,
   },
 ];
 
