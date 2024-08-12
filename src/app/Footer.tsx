@@ -75,7 +75,7 @@ export default function Footer() {
                 <Phone />
               </Button>
             </Link>
-            <Link href="/">
+            <Link href="https://www.youtube.com/@matanauniversityofficial9153">
               <Button variant="outline" size="icon">
                 <Youtube />
               </Button>

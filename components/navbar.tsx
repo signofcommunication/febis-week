@@ -1,6 +1,6 @@
 "use client";
 import { cn } from "@/lib/utils";
-import { BookOpen, MenuIcon } from "lucide-react";
+import { MenuIcon } from "lucide-react";
 import Link from "next/link";
 import * as React from "react";
 import { Dialog, DialogClose } from "@/components/ui/dialog";
@@ -16,7 +16,6 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-  SheetFooter,
 } from "@/components/ui/sheet";
 import Image from "next/image";
 
@@ -75,7 +74,7 @@ export function NavBar() {
           </SheetContent>
         </Dialog>
         <NavigationMenu>
-          <NavigationMenuList className="max-[825px]:hidden ">
+          <NavigationMenuList className="max-[825px]:hidden">
             <Link href="/" className="pl-2 flex">
               <Image
                 src="/logo-matana-febis-week-web.png"
@@ -83,7 +82,6 @@ export function NavBar() {
                 height={100}
                 alt="Logo febis week"
               />
-              {/* <h1 className="font-bold">Febis Week</h1> */}
             </Link>
           </NavigationMenuList>
         </NavigationMenu>

@@ -16,27 +16,27 @@ type CardContent = {
 const contents: CardContent[] = [
   {
     title: "Seminar",
-    link: "https://docs.google.com/forms/d/e/1FAIpQLSeAnE_YFirbnDaBqs75xWF_O60v7m96xqP682J2wxSr87sn5A/viewform?usp=sharing",
+    link: "https://forms.gle/Tzc5KNGMZUA183on8 ",
     imageUrl: `bg-[url('../../public/AXL05224.jpg')]`,
   },
   {
     title: "Workshop",
-    link: "https://docs.google.com/forms/d/e/1FAIpQLSdsFyMHOuaKGUWlhoUf9zSm7JI1J3dxGOWKJUY48xp7i2Yx1g/viewform?usp=sharing",
+    link: "https://forms.gle/P8cutgC5yy2CA7426",
     imageUrl: `bg-[url('../../public/cover-workshop.jpg')]`,
   },
   {
     title: "Accounting Competition",
-    link: "https://docs.google.com/forms/d/e/1FAIpQLSeseCRc_QTo41tXnO03qYeXvWvkmiNpI9d0nO_KUKpJdUyWBA/viewform",
+    link: "https://forms.gle/k8R1nZfKDxnm2A2t7",
     imageUrl: `bg-[url('../../public/lomba-cerdas-cermat-akuntansi.png')]`,
   },
   {
     title: "Product Design Competition",
-    link: "https://docs.google.com/forms/d/e/1FAIpQLSeseCRc_QTo41tXnO03qYeXvWvkmiNpI9d0nO_KUKpJdUyWBA/viewform",
+    link: "https://forms.gle/k8R1nZfKDxnm2A2t7",
     imageUrl: `bg-[url('../../public/lomba-desain-produk.png')]`,
   },
   {
     title: "Essay & Debate Competition",
-    link: "https://docs.google.com/forms/d/e/1FAIpQLSeseCRc_QTo41tXnO03qYeXvWvkmiNpI9d0nO_KUKpJdUyWBA/viewform",
+    link: "https://forms.gle/k8R1nZfKDxnm2A2t7",
     imageUrl: `bg-[url('../../public/lomba-essay-debat.png')]`,
   },
 ];
