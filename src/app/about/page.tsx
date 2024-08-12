@@ -30,7 +30,7 @@ export default function About() {
         <h5
           className="
         rounded-md border bg-muted/50 p-4 text-muted-foreground
-        indent-4 md:indent-0"
+        indent-4 md:indent-0 text-justify"
         >
           Dalam acara tahun ini, FEBIS WEEK mengangkat tema{" "}
           <b>“Creative Economy For Sustainable Development”.</b> Tema ini
@@ -49,7 +49,7 @@ export default function About() {
         <h5
           className="
         rounded-md border bg-muted/50 p-4 text-muted-foreground
-        indent-4 md:indent-0 flex justify-center items-center flex-col"
+        indent-4 md:indent-0 flex justify-center items-center flex-col text-justify"
         >
           Dalam kegiatan FEBIS WEEK 2024, kami bermaksud untuk mensosialisasikan
           pentingnya sektor ekonomi kreatif dengan berbagai kegiatan yaitu

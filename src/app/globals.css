@@ -77,8 +77,8 @@ body {
 }
 
 #febis-week-banner {
-  background: url("../../public/web\ banner.jpg");
-  background-size: contain; /* or contain, or 100% 100% */
+  background: url("../../public/febis-week-2023-thumbnail.jpg");
+  background-size: cover; /* or contain, or 100% 100% */
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -103,38 +103,38 @@ body {
 
 @media (max-width: 400px) {
   /* CSS styles for phones */
-  #febis-week-banner {
+  /* #febis-week-banner {
     background: url("../../public/bg-body-mobile.jpg");
-    background-size: contain; /*or contain, or 100% 100% */
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
     margin-top: 75px;
-  }
+  } */
   /* Other styles for phones */
 }
 
 /* Iphone 11 Breakpoints */
 @media (max-width: 420px) {
   /* CSS styles for Iphone 11 */
-  #febis-week-banner {
+  /* #febis-week-banner {
     background: url("../../public/bg-body-mobile.jpg");
-    background-size: contain; /*or contain, or 100% 100% */
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
     margin-top: 75px;
-  }
+  } */
   /* Other styles for phones */
 }
 
 /* Iphone 12 Pro Max Breakpoints */
 @media (max-width: 428px) {
   /* CSS styles for Iphone 11 */
-  #febis-week-banner {
+  /* #febis-week-banner {
     background: url("../../public/bg-body-mobile.jpg");
-    background-size: contain; /*or contain, or 100% 100% */
+    background-size: contain; 
     background-repeat: no-repeat;
     background-position: center center;
     margin-top: 75px;
-  }
+  } */
   /* Other styles for phones */
 }
