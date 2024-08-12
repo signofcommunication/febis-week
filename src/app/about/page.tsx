@@ -20,7 +20,7 @@ export default function About() {
       indent-4 md:indent-0 mt-24"
       >
         <h1 className="font-bold text-center text-4xl">
-          <Balancer>This Year's Grand Theme</Balancer>
+          <Balancer>This Years Grand Theme</Balancer>
         </h1>
 
         <h1 className="font-bold text-center text-xl">
