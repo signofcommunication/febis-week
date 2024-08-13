@@ -1,46 +1,64 @@
 import { Container, Section } from "../../../components/craft";
 import { Metadata } from "next";
+import { BlogCard } from "@/components/blog-card";
 
 export const metadata: Metadata = {
   title: "Febis Week 2024 Programs",
   description: "Febis Week 2024 Programs",
 };
 
+type ProgramsListType = {
+  title: string;
+  image: string;
+  link: string;
+};
+
+const programsLists: ProgramsListType[] = [
+  {
+    title: "Seminar",
+    image: "/AXL05209.jpg",
+    link: "/program/events/seminar",
+  },
+  {
+    title: "Workshop",
+    image: "/cover-workshop.jpg",
+    link: "/program/events/workshop",
+  },
+  {
+    title: "Accounting Competition",
+    image: "/lomba-cerdas-cermat-akuntansi.png",
+    link: "/program/competitions/cerdas-cermat",
+  },
+  {
+    title: "Product Design Competition",
+    image: "/lomba-desain-produk.png",
+    link: "/program/competitions/desain-produk",
+  },
+  {
+    title: "Essay & Debate Competition",
+    image: "/lomba-essay-debat.png",
+    link: "/program/competitions/essay-debat",
+  },
+];
+
 export default function Program() {
+  const firstRow = programsLists.slice(0, 2);
+  const secondRow = programsLists.slice(2);
+
   return (
     <Section>
       <Container className="mt-24">
         <div className="not-prose mt-4 flex flex-col gap-4 md:flex-wrap">
-          <a
-            href="/program/events/seminar"
-            className="text-center matana-base-color-blue text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
-          >
-            Seminar
-          </a>
-          <a
-            href="/program/events/workshop"
-            className="text-center matana-base-color-blue text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
-          >
-            Workshop
-          </a>
-          <a
-            href="/program/competitions/essay-debat"
-            className="text-center matana-base-color-blue text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
-          >
-            Lomba Essay Debat
-          </a>
-          <a
-            href="/program/competitions/cerdas-cermat"
-            className="text-center matana-base-color-blue text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
-          >
-            Lomba Cerdas Cermat
-          </a>
-          <a
-            href="/program/competitions/desain-produk"
-            className="text-center matana-base-color-blue text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
-          >
-            Lomba Desain Produk
-          </a>
+          <div className="flex sm:flex-row flex-col gap-x-4">
+            {secondRow.map((content, index) => (
+              <BlogCard key={index} {...content} />
+            ))}
+          </div>
+          <div className="flex flex-wrap sm:flex-nowrap sm:flex-row flex-col gap-x-4 justify-center">
+            {firstRow.map((content, index) => (
+              <BlogCard key={index} {...content} />
+            ))}
+          </div>
         </div>
       </Container>
     </Section>
