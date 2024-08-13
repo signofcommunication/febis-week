@@ -4,8 +4,8 @@ import Balancer from "react-wrap-balancer";
 
 export default function Programs() {
   return (
-    <Section className="w-screen">
-      <h1 className="text-center text-4xl font-bold">
+    <Section className="w-screen" id="program-section">
+      <h1 className="text-center text-4xl font-bold text-white">
         <Balancer>Programs</Balancer>
       </h1>
       <Container className="mx-auto">

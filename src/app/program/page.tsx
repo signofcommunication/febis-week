@@ -46,7 +46,7 @@ export default function Program() {
   const secondRow = programsLists.slice(2);
 
   return (
-    <Section>
+    <Section id="programs-section">
       <Container className="mt-24">
         <div className="not-prose mt-4 flex flex-col gap-4 md:flex-wrap">
           <div className="flex sm:flex-row flex-col gap-x-4">

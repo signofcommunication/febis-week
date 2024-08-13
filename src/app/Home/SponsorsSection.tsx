@@ -3,7 +3,10 @@ import Sponsor from "./Sponsor";
 
 export default function SponsorSection() {
   return (
-    <div className="flex flex-col sm:flex-row">
+    <div
+      className="w-screen justify-center flex flex-col sm:flex-row"
+      id="sponsors-section"
+    >
       <Sponsor />
       <MediaSponsor />
     </div>

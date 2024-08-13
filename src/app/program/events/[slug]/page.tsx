@@ -16,7 +16,7 @@ interface Events {
 const data: Events[] = [
   {
     id: "workshop",
-    image: "/cover-workshop.jpg",
+    image: "/foto-workshop-tea-coffee.png",
     date: "29 Oktober 2024",
     description: `Febis Week 2024 akan mengadakan workshop <b>“Coffee & Tea Making”</b> yang akan dibawakan oleh barista & tea master yang profesional dalam bidang tersebut.`,
     description2:
@@ -62,12 +62,14 @@ export default function Events({ params }: { params: { slug: string } }) {
               className="p-0 sm:px-8 text-justify"
               dangerouslySetInnerHTML={{ __html: value.description }}
             ></p>
+            <br />
             {value.description2 && (
               <p
                 className="p-0 sm:px-8 text-justify"
                 dangerouslySetInnerHTML={{ __html: value.description2 }}
               ></p>
             )}
+            <br />
             {value.description3 && (
               <p
                 className="p-0 sm:px-8 text-justify"
@@ -81,7 +83,7 @@ export default function Events({ params }: { params: { slug: string } }) {
             className="focus:outline-none text-black	 bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:focus:ring-yellow-900"
             href={value.link}
           >
-            Daftar Sekarang
+            Registration
           </Link>
         </div>
       </Container>

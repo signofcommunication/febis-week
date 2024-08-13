@@ -46,7 +46,7 @@ export default function Registration() {
   const secondRow = contents.slice(2);
 
   return (
-    <Section>
+    <Section id="registration">
       <Container className="flex flex-col mt-24">
         <div className="flex sm:flex-row flex-col gap-x-4">
           {secondRow.map((content, index) => (

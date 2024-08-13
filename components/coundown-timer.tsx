@@ -48,51 +48,53 @@ export default function CountDown() {
 
   return (
     <main className="flex pb-24 flex-col items-center">
-      <h1 className="text-center text-4xl font-bold">
+      <h1 className="text-center text-4xl text-white font-bold">
         <Balancer>Countdown</Balancer>
       </h1>
-      <p className="my-8 text-xl uppercase">Febis Week Close Registration</p>
+      <p className="my-8 text-xl uppercase text-white">
+        Febis Week Close Registration
+      </p>
       <div className="flex items-start justify-center w-full gap-4 count-down-main">
         <div className="timer w-16">
-          <div className=" bg-indigo-600 py-4 px-2 rounded-lg overflow-hidden">
-            <h3 className="countdown-element days font-Cormorant font-semibold text-2xl text-white text-center">
+          <div className=" bg-slate-100 py-4 px-2 rounded-lg overflow-hidden">
+            <h3 className="countdown-element matana-base-color-blue-text days font-Cormorant font-semibold text-2xl text-white text-center">
               {days}
             </h3>
           </div>
-          <p className="text-lg font-Cormorant font-medium text-gray-900 mt-1 text-center w-full">
+          <p className="text-lg font-Cormorant font-medium text-white mt-1 text-center w-full">
             Days
           </p>
         </div>
-        <h3 className="font-manrope font-semibold text-2xl text-gray-900">:</h3>
+        <h3 className="font-manrope font-semibold text-2xl text-white">:</h3>
         <div className="timer w-16">
-          <div className=" bg-indigo-600 py-4 px-2 rounded-lg overflow-hidden">
-            <h3 className="countdown-element hours font-Cormorant font-semibold text-2xl text-white text-center">
+          <div className=" bg-slate-100 py-4 px-2 rounded-lg overflow-hidden">
+            <h3 className="countdown-element matana-base-color-blue-text hours font-Cormorant font-semibold text-2xl text-white text-center">
               {hours}
             </h3>
           </div>
-          <p className="text-lg font-Cormorant font-normal text-gray-900 mt-1 text-center w-full">
+          <p className="text-lg font-Cormorant font-normal text-white mt-1 text-center w-full">
             Hours
           </p>
         </div>
-        <h3 className="font-manrope font-semibold text-2xl text-gray-900">:</h3>
+        <h3 className="font-manrope font-semibold text-2xl text-white">:</h3>
         <div className="timer w-16">
-          <div className=" bg-indigo-600 py-4 px-2 rounded-lg overflow-hidden">
-            <h3 className="countdown-element minutes font-Cormorant font-semibold text-2xl text-white text-center">
+          <div className=" bg-slate-100 py-4 px-2 rounded-lg overflow-hidden">
+            <h3 className="countdown-element matana-base-color-blue-text minutes font-Cormorant font-semibold text-2xl text-white text-center">
               {minutes}
             </h3>
           </div>
-          <p className="text-lg font-Cormorant font-normal text-gray-900 mt-1 text-center w-full">
+          <p className="text-lg font-Cormorant font-normal text-white mt-1 text-center w-full">
             Minutes
           </p>
         </div>
-        <h3 className="font-manrope font-semibold text-2xl text-gray-900">:</h3>
+        <h3 className="font-manrope font-semibold text-2xl text-white">:</h3>
         <div className="timer w-16">
-          <div className=" bg-indigo-600 py-4 px-2 rounded-lg overflow-hidden ">
-            <h3 className="countdown-element seconds font-Cormorant font-semibold text-2xl text-white text-center animate-countinsecond">
+          <div className=" bg-slate-100 py-4 px-2 rounded-lg overflow-hidden ">
+            <h3 className="countdown-element matana-base-color-blue-text seconds font-Cormorant font-semibold text-2xl text-white text-center animate-countinsecond">
               {seconds}
             </h3>
           </div>
-          <p className="text-lg font-Cormorant font-normal text-gray-900 mt-1 text-center w-full">
+          <p className="text-lg font-Cormorant font-normal text-white mt-1 text-center w-full">
             Seconds
           </p>
         </div>

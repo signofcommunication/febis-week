@@ -13,6 +13,7 @@ export default function About() {
       className="
     relative backdrop-blur-sm
     indent-4 md:indent-0"
+      id="about-section"
     >
       <Container
         className="

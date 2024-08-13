@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Balancer from "react-wrap-balancer";
 import { Button } from "@/components/ui/button";
-import { Facebook, Instagram, Phone, Youtube } from "lucide-react";
+import { Facebook, Instagram, Music2 } from "lucide-react";
 import { Section, Container } from "@/components/craft";
 import Logo from "@/public/logo-Horizontal-white.png";
 
@@ -46,11 +46,15 @@ export default function Footer() {
             <p className="text-white">Agustin Praba (0896-6861-6466)</p>
           </div>
           <div className="flex flex-col justify-end tex-start sm:text-center">
-            <p className="matana-base-color-orange font-bold">Essay & Debate</p>
+            <p className="matana-base-color-orange font-bold">
+              Lomba Essay & Debate
+            </p>
             <p className="text-white">Gladys (0855-1199-114)</p>
           </div>
           <div className="flex flex-col justify-end">
-            <p className="matana-base-color-orange font-bold">Design Produk</p>
+            <p className="matana-base-color-orange font-bold">
+              Lomba Design Produk
+            </p>
             <p className="text-white">Melviana (0822-1374-9305)</p>
           </div>
         </Container>
@@ -60,24 +64,19 @@ export default function Footer() {
             <p className="text-white">Vallerie (0852-2218-2406)</p>
           </div>
           <div className="flex justify-around">
-            <Link href="https://www.instagram.com/matana_univ/?hl=en">
+            <Link href="https://www.instagram.com/matana_febisweek/?hl=en">
               <Button variant="outline" size="icon">
                 <Instagram />
+              </Button>
+            </Link>
+            <Link href="https://www.tiktok.com/@febisweek2024">
+              <Button variant="outline" size="icon">
+                <Music2 />
               </Button>
             </Link>
             <Link href="https://www.facebook.com/MatanaUniversity/?locale=id_ID">
               <Button variant="outline" size="icon">
                 <Facebook />
-              </Button>
-            </Link>
-            <Link href="https://wa.me/081287775999">
-              <Button variant="outline" size="icon">
-                <Phone />
-              </Button>
-            </Link>
-            <Link href="https://www.youtube.com/@matanauniversityofficial9153">
-              <Button variant="outline" size="icon">
-                <Youtube />
               </Button>
             </Link>
           </div>

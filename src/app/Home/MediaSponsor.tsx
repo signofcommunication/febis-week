@@ -41,15 +41,12 @@ const featureText: FeatureText[] = [
 
 const MediaSponsor = () => {
   return (
-    <Section>
+    <Section className="rounded-md border bg-muted p-4 mx-2">
       <Container className="not-prose">
         <div className="flex flex-col">
           <h3 className="text-4xl text-center font-bold mb-3">
             <Balancer>Media Sponsors</Balancer>
           </h3>
-
-          <hr />
-
           <div className="flex flex-wrap justify-center">
             <div className="grid grid-cols-3 gap-4 items-center">
               {featureText.map(({ image }, index) => (

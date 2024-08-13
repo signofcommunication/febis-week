@@ -26,12 +26,11 @@ const featureText: FeatureText[] = [
 
 const Sponsor = () => {
   return (
-    <Section>
+    <Section className="rounded-md border bg-muted p-4">
       <Container className="not-prose">
         <h3 className="text-4xl text-center font-bold mb-3">
           <Balancer>Past Sponsors</Balancer>
         </h3>
-        <hr />
         <div className="flex flex-wrap justify-center">
           <div className="grid grid-cols-3 gap-4 items-center">
             {" "}

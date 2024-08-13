@@ -74,15 +74,24 @@ body {
 }
 
 #febis-week-banner {
-  background: url("../../public/background-febis-week.png");
+  background: url("../../public/black-background-febis-week.png");
   background-size: cover; /* or contain, or 100% 100% */
   background-repeat: no-repeat;
   background-position: center center;
 }
 
 #timeline {
+  background: url("../../public/bground-timeline.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+  padding: 0 20px;
+}
+
+#timeline-track {
   background: url("../../public/timeline.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   height: 65vh;
@@ -92,11 +101,83 @@ body {
   background-color: #14325c;
 }
 
+/* Sponsosrs Section */
+#sponsors-section {
+  background: url("../../public/bground-past-sponsors.png");
+  background-size: cover; /* or contain, or 100% 100% */
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+/* About Banner */
+#about-banner {
+  background: url("../../public/bground-fbw-2024.png");
+  background-size: cover; /* or contain, or 100% 100% */
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
 /* Carousel */
 #home-programs-carousel {
   width: 50vw;
   margin: 0 auto;
   overflow: hidden;
+}
+
+/* Countdown Timer */
+#countdown-timer {
+  background: url("../../public/bground-sponsor-countdown.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+/* Registration */
+#registration {
+  background: url("../../public/bground-registration.png");
+  background-size: cover; /* or contain, or 100% 100% */
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* Program */
+#program-section {
+  background: url("../../public/bground-program-homepage.png");
+  background-size: cover; /* or contain, or 100% 100% */
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* Recap */
+#recap {
+  background: url("../../public/bground-recap-homepage.png");
+  background-size: cover; /* or contain, or 100% 100% */
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* Blog */
+#blog-section {
+  background: url("../../public/bground-blog.png");
+  background-size: cover; /* or contain, or 100% 100% */
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* Programs */
+#programs-section {
+  background: url("../../public/bground-programs.png");
+  background-size: cover; /* or contain, or 100% 100% */
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* About */
+#about-section {
+  background: url("../../public/bground-about.png");
+  background-size: cover; /* or contain, or 100% 100% */
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 /* Footer */
@@ -108,21 +189,69 @@ body {
   background-color: #14325c;
 }
 
+/* Text */
+.matana-base-color-blue-text {
+  color: #14325c;
+}
+
 @media (max-width: 400px) {
   /* CSS styles for phones */
   #febis-week-banner {
-    background: url("../../public/background-febis-week-mobile.png");
+    background: url("../../public/black-background-febis-week-mobile.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
     margin-top: 75px;
   }
   #timeline {
-    background: url("../../public/TIMELINE-FBW_mobile.png");
+    background: url("../../public/bground-timeline-mobile.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
     height: 65vh;
+  }
+  #timeline-track {
+    background: url("../../public/TIMELINE-FBW_mobile.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 65vh;
+  }
+  #registration {
+    background: url("../../public/bground-registration-mobile.png");
+    background-size: contain; /* or contain, or 100% 100% */
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  #program-section {
+    background: url("../../public/bground-program-homepage-mobile.png");
+    background-size: cover; /* or contain, or 100% 100% */
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  #recap {
+    background: url("../../public/bground-recap-homepage-mobile.png");
+    background-size: cover; /* or contain, or 100% 100% */
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  #blog-section {
+    background: url("../../public/bground-blog-mobile.png");
+    background-size: cover; /* or contain, or 100% 100% */
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  #programs-section {
+    background: url("../../public/bground-programs-mobile.png");
+    background-size: cover; /* or contain, or 100% 100% */
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  #about-section {
+    background: url("../../public/bground-about-mobile.png");
+    background-size: cover; /* or contain, or 100% 100% */
+    background-repeat: no-repeat;
+    background-position: center center;
   }
   /* Other styles for phones */
 }
@@ -131,18 +260,61 @@ body {
 @media (max-width: 420px) {
   /* CSS styles for Iphone 11 */
   #febis-week-banner {
-    background: url("../../public/background-febis-week-mobile.png");
+    background: url("../../public/black-background-febis-week-mobile.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
     margin-top: 75px;
   }
   #timeline {
-    background: url("../../public/TIMELINE-FBW_mobile.png");
+    background: url("../../public/bground-timeline-mobile.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
     height: 65vh;
+  }
+  #timeline-track {
+    background: url("../../public/TIMELINE-FBW_mobile.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 65vh;
+  }
+  #registration {
+    background: url("../../public/bground-registration-mobile.png");
+    background-size: contain; /* or contain, or 100% 100% */
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  #program-section {
+    background: url("../../public/bground-program-homepage-mobile.png");
+    background-size: cover; /* or contain, or 100% 100% */
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  #recap {
+    background: url("../../public/bground-recap-homepage-mobile.png");
+    background-size: cover; /* or contain, or 100% 100% */
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  #blog-section {
+    background: url("../../public/bground-blog-mobile.png");
+    background-size: cover; /* or contain, or 100% 100% */
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  #programs-section {
+    background: url("../../public/bground-programs-mobile.png");
+    background-size: cover; /* or contain, or 100% 100% */
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  #about-section {
+    background: url("../../public/bground-about-mobile.png");
+    background-size: cover; /* or contain, or 100% 100% */
+    background-repeat: no-repeat;
+    background-position: center center;
   }
   /* Other styles for phones */
 }
@@ -151,18 +323,61 @@ body {
 @media (max-width: 428px) {
   /* CSS styles for Iphone 11 */
   #febis-week-banner {
-    background: url("../../public/background-febis-week-mobile.png");
+    background: url("../../public/black-background-febis-week-mobile.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
     margin-top: 75px;
   }
   #timeline {
-    background: url("../../public/TIMELINE-FBW_mobile.png");
+    background: url("../../public/bground-timeline-mobile.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
     height: 65vh;
+  }
+  #timeline-track {
+    background: url("../../public/TIMELINE-FBW_mobile.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 65vh;
+  }
+  #registration {
+    background: url("../../public/bground-registration-mobile.png");
+    background-size: contain; /* or contain, or 100% 100% */
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  #program-section {
+    background: url("../../public/bground-program-homepage-mobile.png");
+    background-size: cover; /* or contain, or 100% 100% */
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  #recap {
+    background: url("../../public/bground-recap-homepage-mobile.png");
+    background-size: cover; /* or contain, or 100% 100% */
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  #blog-section {
+    background: url("../../public/bground-blog-mobile.png");
+    background-size: cover; /* or contain, or 100% 100% */
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  #programs-section {
+    background: url("../../public/bground-programs-mobile.png");
+    background-size: cover; /* or contain, or 100% 100% */
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  #about-section {
+    background: url("../../public/bground-about-mobile.png");
+    background-size: cover; /* or contain, or 100% 100% */
+    background-repeat: no-repeat;
+    background-position: center center;
   }
   /* Other styles for phones */
 }

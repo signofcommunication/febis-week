@@ -91,13 +91,13 @@ export default function Page() {
           FEBIS WEEK 2023 menghadirkan beberapa kegiatan menarik, yaitu
         </Balancer>
 
-        <ol className="list-decimal">
+        <ul className="list-decimal list-inside">
           {textDescription.map((value, index) => (
             <li key={index} className="text-justify">
               {value.text}
             </li>
           ))}
-        </ol>
+        </ul>
         <br />
         <br />
         <FeaturedImageGallery />

@@ -74,6 +74,7 @@ export default function Competitions({ params }: { params: { slug: string } }) {
               className="p-0 sm:px-8 text-justify"
               dangerouslySetInnerHTML={{ __html: value.description }}
             ></p>
+            <br />
             <div className="information p-0 sm:px-8 text-justify">
               <span className="font-bold text-xl">Information</span>
               <ul className="list-disc px-4">
@@ -96,7 +97,7 @@ export default function Competitions({ params }: { params: { slug: string } }) {
             className="focus:outline-none text-black	 bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:focus:ring-yellow-900"
             href={value.link}
           >
-            Daftar Sekarang
+            Registration
           </Link>
         </div>
       </Container>
