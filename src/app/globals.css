@@ -70,10 +70,7 @@
 }
 
 body {
-  /* background: url("../../public/bg-body.jpg"); */
   background-size: cover; /* or contain, or 100% 100% */
-  /* background-repeat: no-repeat; */
-  /*background-position: center center; */
 }
 
 #febis-week-banner {
@@ -85,7 +82,7 @@ body {
 
 #timeline {
   background: url("../../public/timeline.png");
-  background-size: contain; /* or contain, or 100% 100% */
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
   height: 65vh;

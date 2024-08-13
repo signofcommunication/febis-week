@@ -38,18 +38,18 @@ export default function Footer() {
           </div>
         </Container>
         <Container className="grid gap-12 sm:justify-items-stretch items-center md:grid-cols-[0.5fr_0.5fr_0.5fr]">
-          <div className="flex flex-col gap-4 justify-end">
+          <div className="flex flex-col justify-end">
             {/* <h5>Program Studi</h5> */}
             <p className="matana-base-color-orange font-bold">
               Lomba Cerdas Cermat
             </p>
             <p className="text-white">Agustin Praba (0896-6861-6466)</p>
           </div>
-          <div className="flex flex-col gap-4 justify-end tex-start sm:text-center">
+          <div className="flex flex-col justify-end tex-start sm:text-center">
             <p className="matana-base-color-orange font-bold">Essay & Debate</p>
             <p className="text-white">Gladys (0855-1199-114)</p>
           </div>
-          <div className="flex flex-col gap-4 justify-end">
+          <div className="flex flex-col justify-end">
             <p className="matana-base-color-orange font-bold">Design Produk</p>
             <p className="text-white">Melviana (0822-1374-9305)</p>
           </div>
