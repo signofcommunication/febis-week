@@ -28,7 +28,7 @@ const programsLists: ProgramsListType[] = [
   {
     title: "Workshop",
     image: "/cover-workshop.jpg",
-    description: `Febis Week 2024 akan mengadakan workshop “Coffee & Tea Making” yang akan dibawakan oleh barista & tea master yang profesional..........`,
+    description: `Febis Week 2024 akan mengadakan workshop “Coffee & Tea Making” yang akan dibawakan oleh barista & tea master yang profesional....`,
     link: "/registration",
   },
   {
