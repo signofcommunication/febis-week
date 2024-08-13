@@ -22,7 +22,7 @@ const programsLists: ProgramsListType[] = [
   {
     title: "Seminar",
     image: "/AXL05209.jpg",
-    description: `Febis Week 2024 akan menyelenggarakan seminar dengan tema “Empowering Tomorrow's Leaders:........`,
+    description: `Febis Week 2024 akan menyelenggarakan seminar dengan tema “Empowering Tomorrow's Leaders:....`,
     link: "/registration",
   },
   {
@@ -34,19 +34,19 @@ const programsLists: ProgramsListType[] = [
   {
     title: "Accounting Competition",
     image: "/lomba-cerdas-cermat-akuntansi.png",
-    description: `Lomba akuntansi dengan tema "Navigating the Financial Landscape of the Creative Economy through Accounting Challenges"............`,
+    description: `Lomba akuntansi dengan tema "Navigating the Financial Landscape of the Creative Economy through Accounting Challenges"....`,
     link: "/registration",
   },
   {
     title: "Product Design Competition",
     image: "/lomba-desain-produk.png",
-    description: `Melalui lomba desain produk dengan tema “Generating Creative Economy Potential with Sustainable Product Design”...........`,
+    description: `Melalui lomba desain produk dengan tema “Generating Creative Economy Potential with Sustainable Product Design”....`,
     link: "/registration",
   },
   {
     title: "Essay & Debate Competition",
     image: "/lomba-essay-debat.png",
-    description: `Lomba dengan tema “Sustainable Creative Economic Innovation” diciptakan dengan tujuan untuk melihat kemampuan..........`,
+    description: `Lomba dengan tema “Sustainable Creative Economic Innovation” diciptakan dengan tujuan untuk melihat kemampuan....`,
     link: "/registration",
   },
 ];
