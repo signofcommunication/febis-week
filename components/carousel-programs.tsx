@@ -14,6 +14,7 @@ import { BlogCard } from "./blog-card";
 type ProgramsListType = {
   title: string;
   image: string;
+  description?: string;
   link: string;
 };
 
@@ -21,26 +22,31 @@ const programsLists: ProgramsListType[] = [
   {
     title: "Seminar",
     image: "/AXL05209.jpg",
+    description: `Febis Week 2024 akan menyelenggarakan seminar dengan tema “Empowering Tomorrow's Leaders:........`,
     link: "/registration",
   },
   {
     title: "Workshop",
     image: "/cover-workshop.jpg",
+    description: `Febis Week 2024 akan mengadakan workshop “Coffee & Tea Making” yang akan dibawakan oleh barista & tea master yang profesional..........`,
     link: "/registration",
   },
   {
     title: "Accounting Competition",
     image: "/lomba-cerdas-cermat-akuntansi.png",
+    description: `Lomba akuntansi dengan tema "Navigating the Financial Landscape of the Creative Economy through Accounting Challenges"............`,
     link: "/registration",
   },
   {
     title: "Product Design Competition",
     image: "/lomba-desain-produk.png",
+    description: `Melalui lomba desain produk dengan tema “Generating Creative Economy Potential with Sustainable Product Design”...........`,
     link: "/registration",
   },
   {
     title: "Essay & Debate Competition",
     image: "/lomba-essay-debat.png",
+    description: `Lomba dengan tema “Sustainable Creative Economic Innovation” diciptakan dengan tujuan untuk melihat kemampuan..........`,
     link: "/registration",
   },
 ];
