@@ -117,6 +117,13 @@ body {
     background-position: center center;
     margin-top: 75px;
   }
+  #timeline {
+    background: url("../../public/TIMELINE-FBW_mobile.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 65vh;
+  }
   /* Other styles for phones */
 }
 
@@ -130,6 +137,13 @@ body {
     background-position: center center;
     margin-top: 75px;
   }
+  #timeline {
+    background: url("../../public/TIMELINE-FBW_mobile.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 65vh;
+  }
   /* Other styles for phones */
 }
 
@@ -142,6 +156,13 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     margin-top: 75px;
+  }
+  #timeline {
+    background: url("../../public/TIMELINE-FBW_mobile.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 65vh;
   }
   /* Other styles for phones */
 }
