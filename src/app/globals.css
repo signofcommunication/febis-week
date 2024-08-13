@@ -81,20 +81,11 @@ body {
 }
 
 #timeline {
-  background: url("../../public/bground-timeline.png");
-  background-size: cover;
+  background: url("../../public/bground-timeline-fbw.png");
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
-  height: 100vh;
-  padding: 0 20px;
-}
-
-#timeline-track {
-  background: url("../../public/timeline.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 65vh;
+  height: 85vh;
 }
 
 #programs {
@@ -201,21 +192,13 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
-    margin-top: 75px;
   }
   #timeline {
-    background: url("../../public/bground-timeline-mobile.png");
+    background: url("../../public/bground-timeline-fbw-mobile.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
-    height: 65vh;
-  }
-  #timeline-track {
-    background: url("../../public/TIMELINE-FBW_mobile.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 65vh;
+    height: 85vh;
   }
   #registration {
     background: url("../../public/bground-registration-mobile.png");
@@ -264,21 +247,13 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
-    margin-top: 75px;
   }
   #timeline {
-    background: url("../../public/bground-timeline-mobile.png");
+    background: url("../../public/bground-timeline-fbw-mobile.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
-    height: 65vh;
-  }
-  #timeline-track {
-    background: url("../../public/TIMELINE-FBW_mobile.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 65vh;
+    height: 85vh;
   }
   #registration {
     background: url("../../public/bground-registration-mobile.png");
@@ -327,21 +302,13 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
-    margin-top: 75px;
   }
   #timeline {
-    background: url("../../public/bground-timeline-mobile.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 65vh;
-  }
-  #timeline-track {
-    background: url("../../public/TIMELINE-FBW_mobile.png");
+    background: url("../../public/bground-timeline-fbw-mobile.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    height: 65vh;
+    height: 85vh;
   }
   #registration {
     background: url("../../public/bground-registration-mobile.png");

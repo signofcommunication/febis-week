@@ -21,7 +21,7 @@ export default function About() {
       indent-4 md:indent-0 mt-24"
       >
         <h1 className="font-bold text-center text-4xl">
-          <Balancer>This Years Grand Theme</Balancer>
+          <Balancer>This Year&rsquo;s Grand Theme</Balancer>
         </h1>
 
         <h1 className="font-bold text-center text-2xl">
@@ -55,7 +55,7 @@ export default function About() {
           Dalam kegiatan FEBIS WEEK 2024, kami bermaksud untuk mensosialisasikan
           pentingnya sektor ekonomi kreatif dengan berbagai kegiatan yaitu
           cerdas cermat, debat, dan design product. Selain itu, kegiatan ini
-          juga didukung dengan diadakannya seminar dan worksho juga bertemakan
+          juga didukung dengan diadakannya seminar dan workshop juga bertemakan
           ekonomi kreatif.
         </h5>
       </Container>
