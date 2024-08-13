@@ -33,8 +33,6 @@ const Sponsor = () => {
         </h3>
         <hr />
         <div className="flex flex-wrap justify-center">
-          {" "}
-          {/* Added flex-wrap for columns */}
           <div className="grid grid-cols-3 gap-4 items-center">
             {" "}
             {/* Grid for 3 columns */}
