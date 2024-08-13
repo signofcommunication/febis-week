@@ -22,7 +22,7 @@ const programsLists: ProgramsListType[] = [
   {
     title: "Seminar",
     image: "/AXL05209.jpg",
-    description: `Febis Week 2024 akan menyelenggarakan seminar dengan tema “Empowering Tomorrow's Leaders:....`,
+    description: `Febis Week 2024 akan menyelenggarakan seminar dengan tema “Empowering Tomorrow's Leaders: Fostering Youth in the Creative....`,
     link: "/program/events/seminar",
   },
   {

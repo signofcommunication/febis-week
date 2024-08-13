@@ -59,11 +59,11 @@ export default function Footer() {
           </div>
         </Container>
         <Container className="grid gap-12 sm:justify-items-stretch items-center md:grid-cols-[1fr_1fr_1fr]">
-          <div className="flex flex-col">
+          <div className="flex flex-col order-1 md:order-1">
             <p className="matana-base-color-orange font-bold">Sponsorship</p>
             <p className="text-white">Vallerie (0852-2218-2406)</p>
           </div>
-          <div className="flex justify-around">
+          <div className="flex justify-around order-3 md:order-2">
             <Link href="https://www.instagram.com/matana_febisweek/?hl=en">
               <Button variant="outline" size="icon">
                 <Instagram />
@@ -80,7 +80,7 @@ export default function Footer() {
               </Button>
             </Link>
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col order-2 md:order-3">
             <p className="matana-base-color-orange font-bold">Media Partner</p>
             <p className="text-white">Yoga (0882-0050-06513)</p>
           </div>

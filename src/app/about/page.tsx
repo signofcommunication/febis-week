@@ -12,13 +12,13 @@ export default function About() {
     <Section
       className="
     relative backdrop-blur-sm
-    indent-4 md:indent-0"
+    md:indent-0"
       id="about-section"
     >
       <Container
         className="
       flex flex-col gap-8
-      indent-4 md:indent-0 mt-24"
+      md:indent-0 mt-24"
       >
         <h1 className="font-bold text-center text-4xl">
           <Balancer>This Year&rsquo;s Grand Theme</Balancer>
