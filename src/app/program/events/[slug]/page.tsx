@@ -16,7 +16,7 @@ interface Events {
 const data: Events[] = [
   {
     id: "workshop",
-    image: "/AXL05228.jpg",
+    image: "/cover-workshop.jpg",
     date: "29 Oktober 2024",
     description: `Febis Week 2024 akan mengadakan workshop <b>“Coffee & Tea Making”</b> yang akan dibawakan oleh barista & tea master yang profesional dalam bidang tersebut.`,
     description2:

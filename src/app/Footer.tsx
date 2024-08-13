@@ -4,7 +4,7 @@ import Balancer from "react-wrap-balancer";
 import { Button } from "@/components/ui/button";
 import { Facebook, Instagram, Phone, Youtube } from "lucide-react";
 import { Section, Container } from "@/components/craft";
-import Logo from "@/public/Logo-Matana_Vertikal-dan-Horizontal-02-1-800x291-1.png";
+import Logo from "@/public/logo-Horizontal-white.png";
 
 export default function Footer() {
   return (
