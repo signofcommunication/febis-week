@@ -12,7 +12,7 @@ export default function Footer() {
       <Section>
         <Container className="grid gap-12 md:grid-cols-[1.5fr_0.5fr_0.5fr]">
           <div className="not-prose flex flex-col gap-6">
-            <Link href="/">
+            <Link href="https://www.matanauniversity.ac.id/">
               <h3 className="sr-only">brijr/components</h3>
               <Image
                 src={Logo}

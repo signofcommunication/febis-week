@@ -61,7 +61,7 @@ const textDescription: FeatureDescription[] = [
 
 export default function Page() {
   return (
-    <Section>
+    <Section className="blog-section">
       <Container className="mt-24">
         <h1 className="text-3xl text-center font-bold pb-8">
           <Balancer>FEBIS WEEK 2023</Balancer>

@@ -2,7 +2,7 @@
 import { cn } from "@/lib/utils";
 import { MenuIcon } from "lucide-react";
 import { Dialog, DialogClose } from "@/components/ui/dialog";
-import { Button } from "./ui/button";
+import { Button, buttonVariants } from "./ui/button";
 import {
   NavigationMenu,
   NavigationMenuLink,
@@ -22,7 +22,7 @@ import Image from "next/image";
 export function NavBar() {
   return (
     <div className="flex items-center min-w-full w-full fixed justify-center p-2 z-[50] mt-[2rem]">
-      <div className="flex justify-between md:w-[720px] w-[95%] border dark:border-zinc-900 dark:bg-black bg-opacity-10 relative backdrop-filter backdrop-blur-lg bg-white border-white border-opacity-20 rounded-xl p-2 shadow-lg">
+      <div className="flex justify-between md:w-[720px] w-[95%] border dark:border-zinc-900 dark:bg-black relative  bg-white border-white border-opacity-20 rounded-xl p-2 shadow-lg">
         <Dialog>
           <SheetTrigger className="min-[825px]:hidden p-2 transition">
             <MenuIcon />
@@ -86,20 +86,29 @@ export function NavBar() {
           </NavigationMenuList>
         </NavigationMenu>
         <div className="flex items-center gap-2 max-[825px]:hidden">
-          <Link href="/">
-            <Button variant="ghost">Home</Button>
+          <Link href="/" className={buttonVariants({ variant: "outline" })}>
+            Home
           </Link>
-          <Link href="/about">
-            <Button variant="ghost">About</Button>
+          <Link
+            href="/about"
+            className={buttonVariants({ variant: "outline" })}
+          >
+            About
           </Link>
-          <Link href="/program">
-            <Button variant="ghost">Program</Button>
+          <Link
+            href="/program"
+            className={buttonVariants({ variant: "outline" })}
+          >
+            Program
           </Link>
-          <Link href="/blog">
-            <Button variant="ghost">Blog</Button>
+          <Link href="/blog" className={buttonVariants({ variant: "outline" })}>
+            Blog
           </Link>
-          <Link href="/registration">
-            <Button variant="ghost">Registration</Button>
+          <Link
+            href="/registration"
+            className={buttonVariants({ variant: "outline" })}
+          >
+            Registration
           </Link>
         </div>
       </div>
