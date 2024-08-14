@@ -82,7 +82,7 @@ body {
 
 #timeline {
   background: url("../../public/bground-timeline-fbw.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   height: 85vh;
