@@ -1,5 +1,4 @@
 import { Container, Section } from "@/components/craft";
-import Image from "next/image";
 import Balancer from "react-wrap-balancer";
 
 const Timeline = () => {
