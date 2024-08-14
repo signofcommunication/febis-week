@@ -25,7 +25,7 @@ const blogList: BlogListTypes[] = [
 
 export default function Page() {
   return (
-    <Section>
+    <Section className="about-section">
       <Container className="mt-24 md:grid md:grid-cols-3 md:gap-4">
         {blogList.map((value, index) => (
           <BlogCard {...value} key={index} />

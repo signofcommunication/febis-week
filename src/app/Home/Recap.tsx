@@ -3,10 +3,7 @@ import Balancer from "react-wrap-balancer";
 
 export default function Recap() {
   return (
-    <Section
-      className="w-full flex flex-col items-center justify-center"
-      id="recap"
-    >
+    <Section className="w-full flex flex-col items-center justify-center recap">
       <h1 className="text-center text-4xl text-white font-bold my-4">
         <Balancer>Febis Week 2023 Recap</Balancer>
       </h1>

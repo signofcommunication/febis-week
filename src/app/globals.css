@@ -93,7 +93,7 @@ body {
 }
 
 /* Sponsosrs Section */
-#sponsors-section {
+.sponsors-section {
   background: url("../../public/bground-past-sponsors.png");
   background-size: cover; /* or contain, or 100% 100% */
   background-repeat: no-repeat;
@@ -140,7 +140,7 @@ body {
 }
 
 /* Recap */
-#recap {
+.recap {
   background: url("../../public/bground-recap-homepage.png");
   background-size: cover; /* or contain, or 100% 100% */
   background-repeat: no-repeat;
@@ -148,7 +148,7 @@ body {
 }
 
 /* Blog */
-#blog-section {
+.blog-section {
   background: url("../../public/bground-blog.png");
   background-size: cover; /* or contain, or 100% 100% */
   background-repeat: no-repeat;
@@ -164,7 +164,7 @@ body {
 }
 
 /* About */
-#about-section {
+.about-section {
   background: url("../../public/bground-about.png");
   background-size: cover; /* or contain, or 100% 100% */
   background-repeat: no-repeat;
@@ -212,13 +212,13 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
   }
-  #recap {
+  .recap {
     background: url("../../public/bground-recap-homepage-mobile.png");
     background-size: cover; /* or contain, or 100% 100% */
     background-repeat: no-repeat;
     background-position: center center;
   }
-  #blog-section {
+  .blog-section {
     background: url("../../public/bground-blog-mobile.png");
     background-size: cover; /* or contain, or 100% 100% */
     background-repeat: no-repeat;
@@ -230,7 +230,7 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
   }
-  #about-section {
+  .about-section {
     background: url("../../public/bground-about-mobile.png");
     background-size: cover; /* or contain, or 100% 100% */
     background-repeat: no-repeat;
@@ -267,13 +267,13 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
   }
-  #recap {
+  .recap {
     background: url("../../public/bground-recap-homepage-mobile.png");
     background-size: cover; /* or contain, or 100% 100% */
     background-repeat: no-repeat;
     background-position: center center;
   }
-  #blog-section {
+  .blog-section {
     background: url("../../public/bground-blog-mobile.png");
     background-size: cover; /* or contain, or 100% 100% */
     background-repeat: no-repeat;
@@ -285,7 +285,7 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
   }
-  #about-section {
+  .about-section {
     background: url("../../public/bground-about-mobile.png");
     background-size: cover; /* or contain, or 100% 100% */
     background-repeat: no-repeat;
@@ -322,13 +322,13 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
   }
-  #recap {
+  .recap {
     background: url("../../public/bground-recap-homepage-mobile.png");
     background-size: cover; /* or contain, or 100% 100% */
     background-repeat: no-repeat;
     background-position: center center;
   }
-  #blog-section {
+  .blog-section {
     background: url("../../public/bground-blog-mobile.png");
     background-size: cover; /* or contain, or 100% 100% */
     background-repeat: no-repeat;
@@ -340,7 +340,7 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
   }
-  #about-section {
+  .about-section {
     background: url("../../public/bground-about-mobile.png");
     background-size: cover; /* or contain, or 100% 100% */
     background-repeat: no-repeat;

@@ -1,9 +1,7 @@
 import { Container, Section } from "@/components/craft";
-import { Undo2 } from "lucide-react";
 import { Metadata } from "next";
 import Balancer from "react-wrap-balancer";
 import FeaturedImageGallery from "@/components/gallery";
-import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Febis Week 2023",
@@ -65,11 +63,6 @@ export default function Page() {
   return (
     <Section>
       <Container className="mt-24">
-        {/* <div className="mb-10">
-          <Link href="/blog">
-            <Undo2 />
-          </Link>
-        </div> */}
         <h1 className="text-3xl text-center font-bold pb-8">
           <Balancer>FEBIS WEEK 2023</Balancer>
         </h1>

@@ -12,8 +12,7 @@ export default function About() {
     <Section
       className="
     relative backdrop-blur-sm
-    md:indent-0"
-      id="about-section"
+    md:indent-0 about-section"
     >
       <Container
         className="

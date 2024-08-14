@@ -7,7 +7,7 @@ import * as Craft from "@/components/craft";
 
 export default function Blog() {
   return (
-    <Section id="blog-section">
+    <Section className="blog-section">
       <Container className="mt-24">
         <Craft.Section
           className="rounded-md border bg-muted/50 p-4"

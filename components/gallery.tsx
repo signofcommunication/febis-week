@@ -11,22 +11,34 @@ export default function FeaturedImageGallery() {
   const [activeIndex, setActiveIndex] = useState(0);
   const data: FeatureText[] = [
     {
-      imageLink: "/AXL05209.jpg",
+      imageLink: "/AXL05493.JPG",
     },
     {
-      imageLink: "/AXL05229.jpg",
+      imageLink: "/AXL05496.JPG",
     },
     {
-      imageLink: "/AXL05211.jpg",
+      imageLink: "/AXL05500.JPG",
     },
     {
-      imageLink: "/AXL05239.jpg",
+      imageLink: "/AXL05501.JPG",
     },
     {
-      imageLink: "/AXL05228.jpg",
+      imageLink: "/IMG_0804.jpg",
     },
     {
-      imageLink: "/cover-workshop.jpg",
+      imageLink: "/IMG_0805.jpg",
+    },
+    {
+      imageLink: "/IMG_0845.jpg",
+    },
+    {
+      imageLink: "/IMG_0846.jpg",
+    },
+    {
+      imageLink: "/IMG_0849.jpg",
+    },
+    {
+      imageLink: "/IMG_0854.jpg",
     },
   ];
 

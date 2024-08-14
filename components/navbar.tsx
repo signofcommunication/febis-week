@@ -1,8 +1,6 @@
 "use client";
 import { cn } from "@/lib/utils";
 import { MenuIcon } from "lucide-react";
-import Link from "next/link";
-import * as React from "react";
 import { Dialog, DialogClose } from "@/components/ui/dialog";
 import { Button } from "./ui/button";
 import {
@@ -17,6 +15,8 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import Link from "next/link";
+import * as React from "react";
 import Image from "next/image";
 
 export function NavBar() {
