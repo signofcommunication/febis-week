@@ -41,7 +41,7 @@ const featureText: FeatureText[] = [
 
 const MediaSponsor = () => {
   return (
-    <Section className="rounded-md border bg-muted p-4 m-0 sm:mx-2">
+    <Section className="rounded-md border bg-muted p-4">
       <Container className="not-prose">
         <div className="flex flex-col">
           <h3 className="text-4xl text-center font-bold mb-3">
