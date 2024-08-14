@@ -189,7 +189,7 @@ body {
   /* CSS styles for phones */
   #febis-week-banner {
     background: url("../../public/black-background-febis-week-mobile.png");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
   }
@@ -244,7 +244,7 @@ body {
   /* CSS styles for Iphone 11 */
   #febis-week-banner {
     background: url("../../public/black-background-febis-week-mobile.png");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
   }
@@ -299,7 +299,7 @@ body {
   /* CSS styles for Iphone 11 */
   #febis-week-banner {
     background: url("../../public/black-background-febis-week-mobile.png");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
   }
