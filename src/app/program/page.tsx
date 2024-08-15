@@ -51,12 +51,16 @@ export default function Program() {
         <div className="not-prose mt-4 flex flex-col gap-4 md:flex-wrap">
           <div className="flex sm:flex-row flex-col gap-x-4">
             {secondRow.map((content, index) => (
-              <BlogCard key={index} {...content} />
+              <div key={index} className="my-2">
+                <BlogCard {...content} />
+              </div>
             ))}
           </div>
           <div className="flex flex-wrap sm:flex-nowrap sm:flex-row flex-col gap-x-4 justify-center">
             {firstRow.map((content, index) => (
-              <BlogCard key={index} {...content} />
+              <div key={index} className="my-2">
+                <BlogCard key={index} {...content} />
+              </div>
             ))}
           </div>
         </div>

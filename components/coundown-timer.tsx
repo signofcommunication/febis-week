@@ -54,10 +54,10 @@ export default function CountDown() {
       <p className="my-8 text-xl uppercase text-white">
         Febis Week Close Registration
       </p>
-      <div className="flex items-start justify-center w-full gap-4 count-down-main">
+      <div className="flex items-start justify-center w-full gap-4 count-down-main px-4">
         <div className="timer w-16">
           <div className=" bg-slate-100 py-4 px-2 rounded-lg overflow-hidden">
-            <h3 className="countdown-element matana-base-color-blue-text days font-Cormorant font-semibold text-2xl text-white text-center">
+            <h3 className="countdown-element matana-base-color-blue-text days font-Cormorant font-semibold text-xl text-white text-center">
               {days}
             </h3>
           </div>
@@ -65,10 +65,12 @@ export default function CountDown() {
             Days
           </p>
         </div>
-        <h3 className="font-manrope font-semibold text-2xl text-white">:</h3>
+        <h3 className="font-manrope font-semibold text-2xl text-white mt-4">
+          :
+        </h3>
         <div className="timer w-16">
           <div className=" bg-slate-100 py-4 px-2 rounded-lg overflow-hidden">
-            <h3 className="countdown-element matana-base-color-blue-text hours font-Cormorant font-semibold text-2xl text-white text-center">
+            <h3 className="countdown-element matana-base-color-blue-text hours font-Cormorant font-semibold text-xl text-white text-center">
               {hours}
             </h3>
           </div>
@@ -76,10 +78,12 @@ export default function CountDown() {
             Hours
           </p>
         </div>
-        <h3 className="font-manrope font-semibold text-2xl text-white">:</h3>
+        <h3 className="font-manrope font-semibold text-2xl text-white mt-4">
+          :
+        </h3>
         <div className="timer w-16">
           <div className=" bg-slate-100 py-4 px-2 rounded-lg overflow-hidden">
-            <h3 className="countdown-element matana-base-color-blue-text minutes font-Cormorant font-semibold text-2xl text-white text-center">
+            <h3 className="countdown-element matana-base-color-blue-text minutes font-Cormorant font-semibold text-xl text-white text-center">
               {minutes}
             </h3>
           </div>
@@ -87,10 +91,12 @@ export default function CountDown() {
             Minutes
           </p>
         </div>
-        <h3 className="font-manrope font-semibold text-2xl text-white">:</h3>
+        <h3 className="font-manrope font-semibold text-2xl text-white mt-4">
+          :
+        </h3>
         <div className="timer w-16">
           <div className=" bg-slate-100 py-4 px-2 rounded-lg overflow-hidden ">
-            <h3 className="countdown-element matana-base-color-blue-text seconds font-Cormorant font-semibold text-2xl text-white text-center animate-countinsecond">
+            <h3 className="countdown-element matana-base-color-blue-text seconds font-Cormorant font-semibold text-xl text-white text-center animate-countinsecond">
               {seconds}
             </h3>
           </div>

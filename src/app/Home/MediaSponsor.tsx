@@ -45,7 +45,7 @@ const MediaSponsor = () => {
       <Container className="not-prose">
         <div className="flex flex-col">
           <h3 className="text-4xl text-center font-bold mb-3">
-            <Balancer>Media Sponsors</Balancer>
+            <Balancer>Media Partners</Balancer>
           </h3>
           <div className="flex flex-wrap justify-center">
             <div className="grid grid-cols-3 gap-4 items-center">

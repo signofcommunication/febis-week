@@ -14,6 +14,7 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
+  SheetFooter,
 } from "@/components/ui/sheet";
 import Link from "next/link";
 import * as React from "react";
@@ -71,6 +72,39 @@ export function NavBar() {
                 </Link>
               </DialogClose>
             </div>
+            <hr className="my-4" />
+            <SheetFooter>
+              <div className="flex flex-col my-3 text-center text-xs">
+                <p className="matana-base-color-orange font-bold">
+                  Media Partner
+                </p>
+                <p className="">Yoga (0882-0050-06513)</p>
+              </div>
+              <div className="flex flex-col justify-end my-3 text-center text-xs">
+                <p className="matana-base-color-orange font-bold">
+                  Lomba Design Produk
+                </p>
+                <p className="">Melviana (0822-1374-9305)</p>
+              </div>
+              <div className="flex flex-col justify-end my-3 text-center text-xs">
+                <p className="matana-base-color-orange font-bold">
+                  Lomba Essay & Debate
+                </p>
+                <p className="">Gladys (0855-1199-114)</p>
+              </div>
+              <div className="flex flex-col justify-end text-center text-xs">
+                <p className="matana-base-color-orange font-bold">
+                  Lomba Cerdas Cermat
+                </p>
+                <p className="">Agustin Praba (0896-6861-6466)</p>
+              </div>
+              <div className="flex flex-col my-3 text-center text-xs">
+                <p className="matana-base-color-orange font-bold">
+                  Sponsorship
+                </p>
+                <p>Vallerie (0852-2218-2406)</p>
+              </div>
+            </SheetFooter>
           </SheetContent>
         </Dialog>
         <NavigationMenu>
