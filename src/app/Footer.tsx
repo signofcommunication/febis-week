@@ -12,7 +12,7 @@ export default function Footer() {
       <Section>
         <Container className="grid gap-12 md:grid-cols-[1.5fr_0.5fr_0.5fr]">
           <div className="not-prose flex flex-col gap-6">
-            <Link href="https://www.matanauniversity.ac.id/">
+            <Link href="https://www.matanauniversity.ac.id/" target="_blank">
               <h3 className="sr-only">brijr/components</h3>
               <Image
                 src={Logo}
@@ -29,7 +29,10 @@ export default function Footer() {
             </Balancer>
             <p className="text-white">
               <Balancer>
-                <Link href="https://goo.gl/maps/CgDyA6nBBWuLCi687">
+                <Link
+                  href="https://goo.gl/maps/CgDyA6nBBWuLCi687"
+                  target="_blank"
+                >
                   Jl. CBD Barat Kav. 1. Gading Serpong <br /> Tangerang - 15810,
                   Indonesia
                 </Link>
@@ -64,17 +67,23 @@ export default function Footer() {
             <p className="text-white">Vallerie (0852-2218-2406)</p>
           </div>
           <div className="flex justify-around order-3 md:order-2">
-            <Link href="https://www.instagram.com/matana_febisweek/?hl=en">
+            <Link
+              href="https://www.instagram.com/matana_febisweek/?hl=en"
+              target="_blank"
+            >
               <Button variant="outline" size="icon">
                 <Instagram />
               </Button>
             </Link>
-            <Link href="https://www.tiktok.com/@febisweek2024">
+            <Link href="https://www.tiktok.com/@febisweek2024" target="_blank">
               <Button variant="outline" size="icon">
                 <Music2 />
               </Button>
             </Link>
-            <Link href="https://www.facebook.com/MatanaUniversity/?locale=id_ID">
+            <Link
+              href="https://www.facebook.com/MatanaUniversity/?locale=id_ID"
+              target="_blank"
+            >
               <Button variant="outline" size="icon">
                 <Facebook />
               </Button>
@@ -89,8 +98,10 @@ export default function Footer() {
         <Container className="not-prose flex flex-col justify-between gap-6 border-t md:flex-row md:items-center md:gap-2">
           <p className="text-muted-foreground text-center text-white">
             ©{" "}
-            <a href="https://www.matanauniversity.ac.id/">Matana University</a>.
-            All rights reserved. 2024-present.
+            <a href="https://www.matanauniversity.ac.id/" target="_blank">
+              Matana University
+            </a>
+            . All rights reserved. 2024-present.
           </p>
         </Container>
       </Section>
